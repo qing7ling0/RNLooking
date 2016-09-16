@@ -28,6 +28,7 @@ class RNLooking extends Component {
         </Text>
       </View>
     );
+    
   }
 }
 
