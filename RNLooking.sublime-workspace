@@ -1,0 +1,257 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"TE",
+				"TextInput"
+			],
+			[
+				"T",
+				"Text"
+			],
+			[
+				"set",
+				"setInterval"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 174.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/work/RNLooking"
+	],
+	"file_history":
+	[
+		"/E/work/MyProject/index.android.js",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/Babel.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-mousemap",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/JsFormat/JsFormat.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/JsFormat.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/E/work/MyProject/index.ios.js",
+		"/E/work/MyProject/node_modules/react-native/local-cli/runAndroid/runAndroid.js",
+		"/C/Users/win10/Downloads/45828.txt",
+		"/C/Users/win10/Downloads/45828.bmp",
+		"/D/BaiduYunDownload/黑刃2/分类/黑忍server/黑忍22222/1.3.0Test/这个是演示服务器的数据,年代久远,请不要动.txt",
+		"/C/Users/win10/Downloads/学习资源链接 .txt",
+		"/D/BaiduYunDownload/黑刃2/分类/version.txt",
+		"/D/BaiduYunDownload/黑刃2/分类/黑忍服务器配置.txt",
+		"/D/BaiduYunDownload/黑刃2/分类/黑刃PC/黑刃PC/GDC_Data/output_log.txt",
+		"/D/BaiduYunDownload/黑刃2/分类/黑忍server/黑忍22222/黑忍服务器配置.txt",
+		"/D/BaiduYunDownload/黑刃2/分类/黑忍server/黑忍22222/Update勿删说明.txt",
+		"/E/20160222恢复/D盘/xampp/readme_de.txt",
+		"/E/20160222恢复/D盘/unity/mmorpg/Assets/Test/FightSimulation.txt",
+		"/E/20160222恢复/D盘/unity/mmorpg/Library/FailedAssetImports.txt",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/pp_strings2.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/sky_word_point_2.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/lens_2.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/lead_son_words_2.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/animnums_2.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/animnums_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/tsp_story_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/tsp_story_en_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_2/xml_2/tsp_story_2.xml",
+		"/I/xxxx/Debug.win32/mode_1/xml_1/pp_strings1.xml",
+		"/I/xxxx/Debug.win32/mode_1/xml_1/animnums_1.xml",
+		"/I/xxxx/Debug.win32/mode_1/xml_1/tsp_story_1.xml",
+		"/I/xxxx/Debug.win32/mode_1/xml_1/sky_word_point_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/lens_en_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/lens_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/pp_strings1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/sky_word_point_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/lens_en1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/mode_1/xml_1/lead_son_words_1.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/tsp.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/song.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/tsp_story.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/animnums.xml",
+		"/E/Work/EGG/Project/proj.win32/Debug.win32/test111.xml"
+	],
+	"find":
+	{
+		"height": 30.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+			"E:\\work\\MyProject\\android",
+			"E:\\work\\MyProject\\node_modules",
+			"F:\\work\\projects\\ndd\\cocos2d\\cocos\\platform\\android\\java\\src\\org\\cocos2dx\\lib"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mainactivity",
+			"ali",
+			":\n",
+			"cente",
+			"center",
+			"ctrl+e",
+			"8081",
+			"80",
+			"Cocos2dxHelperListener",
+			"mActivity",
+			"videoEventListener",
+			"executeVideoCallback",
+			"onPlayEvent",
+			"_eventCallback",
+			"addEventListener",
+			"videoEventCallback",
+			". ",
+			"’"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RNLooking.sublime-project",
+	"replace":
+	{
+		"height": 56.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
