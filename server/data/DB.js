@@ -34,8 +34,8 @@ var getConnection = function(pool, callback) {
 //  type: [insert, select, delete]
 //  property: 属性字段
 //  table: 表名
-//
-//
+//  option: [where]
+//  orderBy:
 var jsonData2SQL = function(data){
 
 }
@@ -44,8 +44,8 @@ function DB() {
     this.pool = mysql.createPool(conf);
 };
 
-DB.prototype.queryWithSql(sql, callback) {
-    getConnection(function(connection) {
+DB.prototype.queryWithSql = function (sql, callback) {
+    getConnection(this.pool, function(connection) {
         var query = connection.query(sql, function(err, result) {
             if (err) {
                 callback(err, result);
@@ -58,18 +58,18 @@ DB.prototype.queryWithSql(sql, callback) {
     });
 }
 
-DB.prototype.req(data, callback) {
-    getConnection(function(connection) {
-        var query = connection.query(sql, function(err, result) {
-            if (err) {
-                callback(err, result);
-            } else {
-                callback(null, result);
-            }
-            connection.release(); //release
-        });
-        log.debug(query.sql);
-    });
+DB.prototype.req = function (data, callback) {
+    // getConnection(function(connection) {
+    //     var query = connection.query(sql, function(err, result) {
+    //         if (err) {
+    //             callback(err, result);
+    //         } else {
+    //             callback(null, result);
+    //         }
+    //         connection.release(); //release
+    //     });
+    //     log.debug(query.sql);
+    // });
 }
 
 exports.Instance = function() {
