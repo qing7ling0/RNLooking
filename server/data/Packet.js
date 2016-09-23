@@ -15,10 +15,27 @@ ResPacket.prototype.toJsonString = function() {
 	return JSON.stringify(jsonObject);
 }
 
-function ReqPacket(reqParams) {
-	this.version = '';
-	this.params = reqParams;
+function ReqPacket(req) {
+	this.req = req;
+	this.reqData = req.body.reqData;
+	this.version = req.body.version;
+	var params = req.params;
+	gLog.debug('ReqPacket create ver=' + this.version + '; reqData=' +  req.params);
 }
+
+ReqPacket.prototype.getQueryCondition = function() {
+	var ret = '1=1';
+	for(var pro in this.reqBody)
+	{
+		if (gDB.checkVaildField(pro))
+		{
+			ret += " and " + pro + "=" + gDB.escape(params[pro]);
+		}
+	}
+
+	return ret;
+}
+
 
 
 exports.ResPacket = ResPacket;
