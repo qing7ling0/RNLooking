@@ -9,7 +9,7 @@ var conf=require("../config.js");
 */
 exports.error=function(err){
     if(err){
-        console.log(err);
+        console.log("\n[ERROR] " + err);
         // errorLogfile.open();
         // if(err instanceof  Error){
         //     var meta = '\n[' + moment(new Date()).format('YYYY-MM-DD HH:mm:ss') + '] [ERROR] ' +err.stack ;

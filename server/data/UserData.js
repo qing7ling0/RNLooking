@@ -1,15 +1,19 @@
+var crypto=require("crypto");
+var moment=require('moment');
+
 var userData = {}
 
-
 var checkAccountExist = function(account, callback) {
-    var sql = 'select top 1 * from user where account=' + account;
-    gDB.executeSql(sql, [], function(err, result) {
+    var sql = 'select * from user where account=?';
+    gDB.executeSql(sql, [account], function(err, result) {
         if (err) {
             callback(err, gDB.status.err_error);
         }else{
             if (result && result.length > 0)
             {
-                callback(new Error('账号已存在'), gDB.status.err_account_exist)
+                var error = new Error('账号已存在');
+                callback(error, gDB.status.err_account_exist)
+                gLog.error(account + ' ' + error);
             }
             else {
                 callback(null, gDB.status.success);
@@ -18,17 +22,24 @@ var checkAccountExist = function(account, callback) {
     });
 }
 
-var loginSuccess = function(user, callback) {
-
+var sha1Encrypt = function(value) {
+    var sha1 = crypto.createHash('sha1');
+    sha1.update(value);
+    return sha1.digest('hex');
 }
 
-var registerSuccess = function(user, callback) {
+var loginSuccess = function(user) {
 
+    gLog.debug(user.realname + ' login success!');
+}
+
+var registerSuccess = function(account, id) {
+
+    gLog.debug(account + 'register success!');
 }
 
 userData.getAllUser = function(callback) {
     var selectSQL = 'select * from user';
-    gLog.debug('getAllUser');
     gDB.executeSql(selectSQL, null, function(err, result) {
         if (err) {
             callback(err, null);
@@ -39,40 +50,48 @@ userData.getAllUser = function(callback) {
 }
 
 userData.login = function(account, password, callback) {
-    if(!account || account.length===0 || !password || password===0) {
-        callback(err, {status:gDB.status.err_account_pd_null});
+    if(!account || account.length===0 || !password || password.length===0) {
+        callback({status:gDB.status.err_ac_pd_null, msg:'账号密码不能为空!'});
     } else {
-        var selectSQL = 'select * from user where account=?, password=?';
-        gDB.executeSql(selectSQL, [account, password], function(err, result) {
+        var sha1pd = sha1Encrypt(password);
+        var selectSQL = 'select * from user where account=? and password=?';
+        gDB.executeSql(selectSQL, [account, sha1pd], function(err, result) {
             if (err) {
-                callback(err, {status: gDB.status.err_error});
+                callback({status:gDB.status.err_error, msg:'登陆失败!'});
             } else {
-                loginSuccess(result);
-                callback(null, {status: gDB.status.success, result:result});
+                if (result.length === 0)
+                {
+                    callback({status:gDB.status.err_ac_pd_error, data:result, msg:'账号密码错误!'});
+                }
+                else {
+                    loginSuccess(result[0]);
+                    callback({status:gDB.status.success, data:result, msg:'登陆成功!'});
+                }
             }
         });
     }
 }
 
 userData.register = function(account, password, callback) {    
-    if(!account || account.length===0 || !password || password===0) {
-        callback(err, {status:gDB.status.err_account_pd_null});
+    if(!account || account.length===0 || !password || password.length===0) {
+        callback({status:gDB.status.err_ac_pd_null, msg:'账号密码不能为空!'});
     } else {
         checkAccountExist(account, function(err, status) {
             if (status === gDB.status.success) {
-                var sql = 'insert into user set account=?, password=?';
-                gDB.executeSql(sql, [account, password], function(err, result) {
+                var sql = 'insert into user set account=?, password=?, realname=?, create_date=?, last_login_date=?';
+                var sha1pd = sha1Encrypt(password);
+                gDB.executeSql(sql, [account, sha1pd, account, new Date(), new Date()], function(err, result) {
                     if (err) {
-                        callback(err, {status: status});
+                        callback({status:status, msg:'注册失败！'});
                     } else {
-                        registerSuccess(result);
-                        callback(null, {status: status, result:result});
+                        registerSuccess(account, result.insertId);
+                        callback({status:status, data:result, msg:'注册成功!'});
                     }
                 });
             } else if (status === gDB.status.err_account_exist) {
-                callback(err, {status: status});
+                callback({status:status, msg:err.message});
             } else {
-                callback(err, {status: status});
+                callback({status:status, msg:'注册失败!'});
             }
         });
     }

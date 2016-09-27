@@ -10,8 +10,9 @@ var status = {
     success                     : 0,
     err_error                   : -1,
     err_account_exist           : -2,
-    err_account_pd_null         : -3,
-    err_no_permission           : -4
+    err_ac_pd_null              : -3,
+    err_no_permission           : -4,
+    err_ac_pd_error             : -5,
 }
 
 var mysql = require('mysql');
@@ -32,7 +33,7 @@ var getConnection = function(pool, callback) {
         }
         pool.getConnection(function(err, connection) {
             if (err) {
-                log.err('get connection pool error:' + err);
+                gLog.error('get connection pool error:' + err);
                 throw err;
             }
             callback(connection);
@@ -69,12 +70,13 @@ DB.prototype.executeSql = function(sql, params, callback) {
     }
     if (params) {
         for (var i=0; i<params.length; i++) {
-            sql=sql.replace("?",this.escape(params[i])) ;
+            sql=sql.replace("?", gDB.escape(params[i])) ;
         }
     }
     getConnection(this.pool, function(connection) {
         var query = connection.query(sql, function(err, result) {
             if (err) {
+                gLog.error('executeSql sql=' + sql + '; err=' + err);
                 callback(err, result);
             } else {
                 callback(null, result);

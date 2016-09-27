@@ -13,7 +13,7 @@ var resGetUsers = function (res, err, result) {
 }
 
 var reqGetUsers = function(req, res, next) {
-    gLog.debug('reqGetUsers req=' + JSON.stringify(req.body));
+    gLog.debug('reqGetUsers req=' + JSON.stringify(req.params));
     users.getAllUser(function(err, result){
     	resGetUsers(res, err, result);
     });
@@ -29,9 +29,7 @@ router.get('/login', function(req, res, next) {
 });
 
 router.get('/register', function(req, res, next) {
-    gLog.debug('register req=' + JSON.stringify(req.params));
-    // login.reqRegister(req, res, next);
-    res.json(JSON.stringify(req.body));
+    login.reqRegister(req, res, next);
 });
 
 

@@ -1,8 +1,8 @@
-function ResPacket(err, result) {
-	this.status = err ? 1 : 0;
-	this.version = '1';
-	this.message = err ? err : '';
-	this.data = result;
+function ResPacket(result) {
+	this.status = result.status;
+	this.version = gConfig.server_version;
+	this.message = result.msg ? result.msg : "";
+	this.data = result.data ? result.data : {};
 }
 
 ResPacket.prototype.toJsonString = function() {
@@ -15,28 +15,28 @@ ResPacket.prototype.toJsonString = function() {
 	return JSON.stringify(jsonObject);
 }
 
-function ReqPacket(req) {
+function ReqPacket(req, isGet) {
 	this.req = req;
-	this.reqData = req.body.reqData;
-	this.version = req.body.version;
-	var params = req.params;
-	gLog.debug('ReqPacket create ver=' + this.version + '; reqData=' +  req.params);
+	this.version = req.param('version');
+    this.isGet = isGet;
 }
 
-ReqPacket.prototype.getQueryCondition = function() {
+ReqPacket.prototype.getValue = function (key) {
+    return this.req.param(key);
+}
+
+ReqPacket.prototype.getWhereCondition = function(datas) {
 	var ret = '1=1';
-	for(var pro in this.reqBody)
+	for(var pro in datas)
 	{
 		if (gDB.checkVaildField(pro))
 		{
-			ret += " and " + pro + "=" + gDB.escape(params[pro]);
+			ret += " and " + pro + "=" + gDB.escape(datas[pro]);
 		}
 	}
 
 	return ret;
 }
-
-
 
 exports.ResPacket = ResPacket;
 exports.ReqPacket = ReqPacket;

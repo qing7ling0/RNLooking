@@ -13,6 +13,7 @@ var app = express();
 var db = require('./data/DB');
 global.gLog = require('./utils/log');
 global.gDB = db.Instance();
+global.gConfig = require('./config')
 
 
 // view engine setup
