@@ -10,21 +10,7 @@ import {
   Navigator
 } from 'react-native';
 
-import LayoutTest from './Test/LayoutTest';
+import application from './app/application'
 
-class RNLooking extends Component {
-  render() {
-    return (
-      <Navigator
-        initialRoute={{ title: 'LayoutTest', component: LayoutTest, index: 0, params: {} }}
-        renderScene={(route, navigator) => {
-          var Component1 = route.component;
-          <LayoutTest />
-        }}
-      />
-    );
-    
-  }
-}
+AppRegistry.registerComponent('RNLooking', () => application);
 
-AppRegistry.registerComponent('RNLooking', () => RNLooking);
