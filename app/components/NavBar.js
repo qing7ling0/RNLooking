@@ -33,7 +33,7 @@ class NavBar extends Component {
       let centerView = this.renderContent();
 
       var rightButtonConfig = {
-        title: 'Next',
+        title: 'Next1',
         handler: () => {
           // alert('hello!');
           this.setState({
