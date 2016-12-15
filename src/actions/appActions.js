@@ -2,9 +2,9 @@
  *  app全局相关action
  */
 import {AsyncStorage} from 'react-native'
-import http from '../utils/http'
-import utils from '../utils/utils'
-import * as types from '../constants/actionTypes'
+import Http from '../utils/Http'
+import Utils from '../utils/Utils'
+import * as ActionTypes from '../constants/ActionTypes'
 
 const Users = [ 
         {id:1, name:'张飞', lastChatMessage:'我们又不关心你是什么星座，只关心你是哪些星座的缺点的结合点而已', lastChatMessageDate:'2016-12-5', unreadMessageCount:2, icon:1},
@@ -58,16 +58,16 @@ export const getUsers = (page, pageCount) => {
         if (i < 1) {
             ret.push(Users[list[i]]);
         } else {
-            let ind = utils.randomInt(i+1);
+            let ind = Utils.randomInt(i+1);
             ret.push(Users[list[ind]]);
             list[ind] = list[i];
         }
     }
 
     return (dispatch) => {
-        dispatch({ type: types.REQ_USER_LIST, page:page })
+        dispatch({ type: ActionTypes.REQ_USER_LIST, page:page })
         setTimeout(() => {
-            dispatch({ type: types.RES_USER_LIST, users: ret, page:page, pageCount:pageCount })
+            dispatch({ type: ActionTypes.RES_USER_LIST, users: ret, page:page, pageCount:pageCount })
         }, 500)
     };
 }
@@ -76,36 +76,36 @@ export const getUsers = (page, pageCount) => {
  */
 export const getUserInfo = (id) => {
     return (dispatch) => {
-        dispatch({ type: types.REQ_USER_INFO })
+        dispatch({ type: ActionTypes.REQ_USER_INFO })
         setTimeout(() => {
-            dispatch({ type: types.RES_USER_INFO, info: getUserInfoFN(id) })
+            dispatch({ type: ActionTypes.RES_USER_INFO, info: getUserInfoFN(id) })
         }, 50)
     };
 }
 
 export const getAllFriends = () => {
     return (dispatch) => {
-        dispatch({ type: types.REQ_ALL_FRIENDS })
+        dispatch({ type: ActionTypes.REQ_ALL_FRIENDS })
         setTimeout(() => {
-            dispatch({ type: types.RES_ALL_FRIENDS, friendGroups:FriendGroups, friends:Friends })
+            dispatch({ type: ActionTypes.RES_ALL_FRIENDS, friendGroups:FriendGroups, friends:Friends })
         }, 50)
     };
 }
 
 export const showMoreMenu = (menuRenderFn) => {
     return (dispatch) => {
-        dispatch({ type: types.SHOW_MORE_MENU, maskRender: menuRenderFn })
+        dispatch({ type: ActionTypes.SHOW_MORE_MENU, maskRender: menuRenderFn })
     };
 }
 
 export const hideMoreMenu = () => {
     return (dispatch) => {
-        dispatch({ type: types.HIDE_MORE_MENU})
+        dispatch({ type: ActionTypes.HIDE_MORE_MENU})
     };
 }
 
 export const showMainNav = (navID) => {
     return (dispatch) => {
-        dispatch({ type: types.SHOW_MAIN_NAV, navID:navID})
+        dispatch({ type: ActionTypes.SHOW_MAIN_NAV, navID:navID})
     };
 }

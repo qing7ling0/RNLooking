@@ -16,13 +16,13 @@ import {StyleSheet,
   TouchableHighlight
 } from 'react-native';
 import {bindActionCreators} from 'redux'
-import * as appActions from '../actions/appActions'
+import * as AppActions from '../actions/AppActions'
 import { connect } from 'react-redux'
-import utils from '../utils/utils'
+import Utils from '../utils/Utils'
 import Icon from 'react-native-vector-icons/Ionicons';
 import Header from '../components/Header'
-import {skin} from '../modules/skin';
-import * as config from '../constants/config';
+import {Skin} from '../modules/Skin';
+import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem'
 
 const moreMenuDatas = [
@@ -69,7 +69,7 @@ class MessageList extends Component {
       if (!data) {
         // Alert.alert('登陆', '👽来者何人！👽', [{ text: '确定', onPress: this._saveAuthor }])
       }else{
-        utils.author=data
+        Utils.author=data
       }
     })
   }
@@ -150,21 +150,21 @@ class MessageList extends Component {
 
   _headOptionCallback(type) {
     switch(type) {
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_MENU:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_MENU:
       {
         const {showMoreMenu} = this.props;
         showMoreMenu(this._renderMoreMenu.bind(this));
       }
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MESSAGE_LIST:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MESSAGE_LIST:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_USER_INFO:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_USER_INFO:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_PHONE_LIST:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_PHONE_LIST:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_ZONE:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_ZONE:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_ADD_FRIEND_VIEW:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_ADD_FRIEND_VIEW:
       break;
     }
   }
@@ -225,9 +225,9 @@ class MessageList extends Component {
     return (
       <View style={{
         flex: 1,
-        height: utils.px2dp(200),
+        height: Utils.px2dp(200),
         borderColor: '#c3c3c3',
-        borderWidth: utils.px2dp(1),
+        borderWidth: Utils.px2dp(1),
       }}>
         <TouchMoveItem
           renderContent={this._renderRowContent.bind(this)(row)}
@@ -239,7 +239,7 @@ class MessageList extends Component {
 
   _saveAuthor(author) {
     AsyncStorage.setItem('author', author)
-    utils.author=author
+    Utils.author=author
   }
 
   _renderFooter() {
@@ -289,21 +289,21 @@ class MessageList extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: skin.bodyBackgroundColor
+    backgroundColor: Skin.bodyBackgroundColor
   },
   flex: {
     flex: 1
   },
   moreMenuContainer: {
     position: 'absolute',
-    right: utils.px2dp(16),
-    top: utils.px2dp(26+152),
-    width: utils.px2dp(480),
-    borderRadius: utils.px2dp(12),
-    backgroundColor: skin.bodyBackgroundColor
+    right: Utils.px2dp(16),
+    top: Utils.px2dp(26+152),
+    width: Utils.px2dp(480),
+    borderRadius: Utils.px2dp(12),
+    backgroundColor: Skin.bodyBackgroundColor
   },
   moreMenuItem: {
-    height: utils.px2dp(130),
+    height: Utils.px2dp(130),
   },
   moreMenuItemInnerContainer: {
     flex: 1,
@@ -311,44 +311,44 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   moreMenuTop: {
-    borderTopRightRadius: utils.px2dp(12),
-    borderTopLeftRadius: utils.px2dp(12),
+    borderTopRightRadius: Utils.px2dp(12),
+    borderTopLeftRadius: Utils.px2dp(12),
   },
   moreMenuBottom: {
-    borderBottomRightRadius: utils.px2dp(12),
-    borderBottomLeftRadius: utils.px2dp(12),
+    borderBottomRightRadius: Utils.px2dp(12),
+    borderBottomLeftRadius: Utils.px2dp(12),
   },
   moreMenuItemText: {
     color: '#000000',
-    fontSize: utils.fontSize2RN(50),
+    fontSize: Utils.fontSize2RN(50),
   },
   moreMenuItemImage: {
-    width: utils.px2dp(80),
-    height: utils.px2dp(80),
-    marginLeft: utils.px2dp(30),
-    marginRight: utils.px2dp(30),
+    width: Utils.px2dp(80),
+    height: Utils.px2dp(80),
+    marginLeft: Utils.px2dp(30),
+    marginRight: Utils.px2dp(30),
   },
   listItemContainer: {
     flex: 1,
-    height: utils.px2dp(200),
+    height: Utils.px2dp(200),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderColor: skin.messageListItemBorderColor,
-    borderBottomWidth: utils.px2dp(1),
-    paddingLeft: utils.px2dp(36),
-    paddingRight: utils.px2dp(36),
+    borderColor: Skin.messageListItemBorderColor,
+    borderBottomWidth: Utils.px2dp(1),
+    paddingLeft: Utils.px2dp(36),
+    paddingRight: Utils.px2dp(36),
   },
   listItemIcon: {
-    width: utils.px2dp(150),
-    height: utils.px2dp(150),
-    borderRadius: utils.px2dp(75),
-    marginRight: utils.px2dp(36)
+    width: Utils.px2dp(150),
+    height: Utils.px2dp(150),
+    borderRadius: Utils.px2dp(75),
+    marginRight: Utils.px2dp(36)
   },
   listItemDate: {
-    color: skin.messageListItemDateColor,
-    fontSize: utils.fontSize2RN(30),
-    marginBottom: utils.px2dp(6),
+    color: Skin.messageListItemDateColor,
+    fontSize: Utils.fontSize2RN(30),
+    marginBottom: Utils.px2dp(6),
   },
   listItemRight: {
     flex: 1,
@@ -367,27 +367,27 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   listItemTitle: {
-    color: skin.messageListItemTitleColor,
-    fontSize: utils.fontSize2RN(50),
+    color: Skin.messageListItemTitleColor,
+    fontSize: Utils.fontSize2RN(50),
   },
   listItemIntro: {
     flex: 1,
-    color: skin.messageListItemIntroColor,
-    fontSize: utils.fontSize2RN(40),
+    color: Skin.messageListItemIntroColor,
+    fontSize: Utils.fontSize2RN(40),
   },
   listItemTipContainer: {
-    width: utils.px2dp(60),
-    height: utils.px2dp(60),
+    width: Utils.px2dp(60),
+    height: Utils.px2dp(60),
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: skin.messageListItemTipBackgroundColor,
-    borderRadius: utils.px2dp(30),
-    marginRight: utils.px2dp(10)
+    backgroundColor: Skin.messageListItemTipBackgroundColor,
+    borderRadius: Utils.px2dp(30),
+    marginRight: Utils.px2dp(10)
   },
   listItemTipText: {
-    color: skin.messageListItemTipTextColor,
-    borderRadius: utils.px2dp(15),
-    fontSize: utils.fontSize2RN(30),
+    color: Skin.messageListItemTipTextColor,
+    borderRadius: Utils.px2dp(15),
+    fontSize: Utils.fontSize2RN(30),
   },
   listItemBottomContainer: {
     flex:1,
@@ -400,53 +400,53 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems:'center',
-    minWidth: utils.px2dp(250),
+    minWidth: Utils.px2dp(250),
   },
   listItemBottomBtn1: {
     flex:1,
-    backgroundColor: skin.messageListItemRightBtnColor1,
+    backgroundColor: Skin.messageListItemRightBtnColor1,
   },
   listItemBottomBtn2: {
     flex:1,
-    backgroundColor: skin.messageListItemRightBtnColor2,
+    backgroundColor: Skin.messageListItemRightBtnColor2,
   },
   listItemBottomBtn3: {
     flex:1,
-    backgroundColor: skin.messageListItemRightBtnColor3,
+    backgroundColor: Skin.messageListItemRightBtnColor3,
   },
   listItemBottomText: {
-    color: skin.messageListItemRightTextColor,
-    fontSize: utils.fontSize2RN(56),
-    marginLeft: utils.px2dp(50),
-    marginRight: utils.px2dp(50)
+    color: Skin.messageListItemRightTextColor,
+    fontSize: Utils.fontSize2RN(56),
+    marginLeft: Utils.px2dp(50),
+    marginRight: Utils.px2dp(50)
   },
   searchContainer: {
     flex:1,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: utils.px2dp(37),
-    marginRight: utils.px2dp(37),
-    marginTop: utils.px2dp(20),
-    marginBottom: utils.px2dp(20),
-    height: utils.px2dp(80),
-    borderRadius: utils.px2dp(6),
-    backgroundColor:skin.searchBackgroundColor
+    marginLeft: Utils.px2dp(37),
+    marginRight: Utils.px2dp(37),
+    marginTop: Utils.px2dp(20),
+    marginBottom: Utils.px2dp(20),
+    height: Utils.px2dp(80),
+    borderRadius: Utils.px2dp(6),
+    backgroundColor:Skin.searchBackgroundColor
   },
   searchIcon: {
-    width: utils.px2dp(42),
-    height: utils.px2dp(42),
-    marginRight: utils.px2dp(13),
-    tintColor: skin.searchIconColor,
+    width: Utils.px2dp(42),
+    height: Utils.px2dp(42),
+    marginRight: Utils.px2dp(13),
+    tintColor: Skin.searchIconColor,
   },
   searchText: {
-    color:skin.searchTextColor,
-    fontSize:utils.fontSize2RN(45)
+    color:Skin.searchTextColor,
+    fontSize:Utils.fontSize2RN(45)
   },
   backgroundImage: {
     flex: 1,
-    width: utils.size.width,
-    height: utils.size.height,
+    width: Utils.size.width,
+    height: Utils.size.height,
     position: 'absolute',
   }
 })
@@ -460,8 +460,8 @@ export default connect(state => ({
   isMoreMenuShow: state.app.maskRender || false
 }),
   (dispatch) => ({
-    getUsers: (page, pageCount) => dispatch(appActions.getUsers(page, pageCount)),
-    showMoreMenu: (moreMenuRender) => dispatch(appActions.showMoreMenu(moreMenuRender)),
-    hideMoreMenu: () => dispatch(appActions.hideMoreMenu())
+    getUsers: (page, pageCount) => dispatch(AppActions.getUsers(page, pageCount)),
+    showMoreMenu: (moreMenuRender) => dispatch(AppActions.showMoreMenu(moreMenuRender)),
+    hideMoreMenu: () => dispatch(AppActions.hideMoreMenu())
   })
 )(MessageList);

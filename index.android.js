@@ -10,7 +10,7 @@ import {
   Navigator
 } from 'react-native';
 
-import application from './app/application'
+import index from './src/index';
 
-AppRegistry.registerComponent('RNLooking', () => application);
+AppRegistry.registerComponent('RNLooking', () => index);
 

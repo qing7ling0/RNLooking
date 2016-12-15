@@ -4,21 +4,667 @@
 		"selected_items":
 		[
 			[
+				"_row",
+				"_rowSectionArrows"
+			],
+			[
+				"set",
+				"setState\t(ListView.js)"
+			],
+			[
+				"FRI",
+				"friendListItem.js"
+			],
+			[
+				"rowch",
+				"rowCaches"
+			],
+			[
+				"Tou",
+				"TouchableHighlight\t(friendsList.js)"
+			],
+			[
+				"St",
+				"StyleSheet\t(friendsList.js)"
+			],
+			[
+				"str",
+				"strict\t(ListView.js)"
+			],
+			[
+				"sty",
+				"styles"
+			],
+			[
+				"fle",
+				"flexDirection"
+			],
+			[
+				"st",
+				"style"
+			],
+			[
+				"sec",
+				"section\t(ListView.js)"
+			],
+			[
+				"re",
+				"refs\tReact: this.refs."
+			],
+			[
+				"gro",
+				"groupsExpander"
+			],
+			[
+				"sectio",
+				"sectionID"
+			],
+			[
+				"ex",
+				"expander"
+			],
+			[
+				"fri",
+				"friendRows"
+			],
+			[
+				"friendRo",
+				"friendRowCache"
+			],
+			[
+				"friendc",
+				"friendDataCache"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"rowid",
+				"rowID"
+			],
+			[
+				"se",
+				"sectionID"
+			],
+			[
+				"sectionA",
+				"sectionArrowRight"
+			],
+			[
+				"grou",
+				"groups"
+			],
+			[
+				"ad",
+				"adjacentRowHighlighted"
+			],
+			[
+				"pad",
+				"paddingRight"
+			],
+			[
+				"listitemrig",
+				"listItemRightText"
+			],
+			[
+				"mar",
+				"marginRight"
+			],
+			[
+				"ti",
+				"tintColor"
+			],
+			[
+				"frie",
+				"friendRows"
+			],
+			[
+				"REQ",
+				"REQ_ALL_FRIENDS\t(appActions.js)"
+			],
+			[
+				"listHeadBottom",
+				"listHeadBottomItemText"
+			],
+			[
+				"listh",
+				"listHeadBottomItemText"
+			],
+			[
+				"listhea",
+				"listHeadBottom"
+			],
+			[
+				"co",
+				"column"
+			],
+			[
+				"_renderHe",
+				"_renderHeaderRightBtn"
+			],
+			[
+				"right",
+				"rightBtn"
+			],
+			[
+				"rig",
+				"rightBtn"
+			],
+			[
+				"_re",
+				"_renderTitle"
+			],
+			[
+				"fonts",
+				"fontSize2RN"
+			],
+			[
+				"ser",
+				"searchText"
+			],
+			[
+				"searh",
+				"searchText"
+			],
+			[
+				"searchIcon",
+				"searchIconColor\t(skins.js)"
+			],
+			[
+				"al",
+				"alignItems"
+			],
+			[
+				"fl",
+				"flexDirection"
+			],
+			[
+				"sear",
+				"searchBackgroundColor\t(skins.js)"
+			],
+			[
+				"messageListItemti",
+				"messageListItemTipTextColor\t(skins.js)"
+			],
+			[
+				"messageListItem",
+				"messageListItemRightBtnColor2\t(skins.js)"
+			],
+			[
+				"messageListIteml",
+				"messageListItemLeftTextColor\t(skins.js)"
+			],
+			[
+				"me",
+				"messageListItemBorderColor\t(skins.js)"
+			],
+			[
+				"backgr",
+				"backgroundColor\t(Header.js)"
+			],
+			[
+				"_rend",
+				"_renderRowLeft"
+			],
+			[
+				"_ren",
+				"_renderRowContent"
+			],
+			[
+				"fon",
+				"fontSize2RN"
+			],
+			[
+				"Touch",
+				"TouchableOpacity"
+			],
+			[
+				"lef",
+				"leftMoveOff"
+			],
+			[
+				"move",
+				"moveOff"
+			],
+			[
+				"gestu",
+				"gestureState"
+			],
+			[
+				"fontS",
+				"fontSize2RN\t(utils.js)"
+			],
+			[
+				"marg",
+				"margin\t(README.md)"
+			],
+			[
+				"bor",
+				"borderColor\t(Header.js)"
+			],
+			[
+				"listItemc",
+				"listItemContainer"
+			],
+			[
+				"listItemt",
+				"listItemTipContainer"
+			],
+			[
+				"listItem",
+				"listItemIntro"
+			],
+			[
+				"listItemC",
+				"listItemCenter"
+			],
+			[
+				"jus",
+				"justifyContent"
+			],
+			[
+				"bo",
+				"borderRadius"
+			],
+			[
+				"more",
+				"moreMenuItem"
+			],
+			[
+				"mor",
+				"moreMenuDatas"
+			],
+			[
+				"morem",
+				"moreMenuDatas"
+			],
+			[
+				"moreMENUt",
+				"moreMenuItemText"
+			],
+			[
+				"conv",
+				"conversation_options_multichat.png\tw:48 h:48"
+			],
+			[
+				"font",
+				"fontSize\t(Header.js)"
+			],
+			[
+				"le",
+				"left\t(app.js)"
+			],
+			[
+				"_render",
+				"_renderMoreMenu"
+			],
+			[
+				"show",
+				"showMoreMenu\t(appActions.js)"
+			],
+			[
+				"TYPE_",
+				"TYPE_SHOW_USER_INFO\t(config.js)"
+			],
+			[
+				"mas",
+				"maskRender"
+			],
+			[
+				"mask",
+				"maskRender\t(app.js)"
+			],
+			[
+				"ba",
+				"backgroundColor"
+			],
+			[
+				"TYPE_SHOW_",
+				"TYPE_SHOW_MORE_MENU\t(config.js)"
+			],
+			[
+				"ri",
+				"rightPress"
+			],
+			[
+				"TY",
+				"TYPE_SHOW_MESSAGE_LIST\t(config.js)"
+			],
+			[
+				"pop",
+				"props\tReact: this.props."
+			],
+			[
+				"ski",
+				"skins"
+			],
+			[
+				"sk",
+				"skins"
+			],
+			[
+				"ref",
+				"refreshing"
+			],
+			[
+				"RES",
+				"RES_USER_LIST\t(actionTypes.js)"
+			],
+			[
+				"R",
+				"REQ_DATA\t(actionTypes.js)"
+			],
+			[
+				"page",
+				"pageCount\t(UserList.js)"
+			],
+			[
+				"pro",
+				"props\tReact: this.props."
+			],
+			[
+				"conf",
+				"configureStore\t(configureStore.js)"
+			],
+			[
+				"GET",
+				"GET_USER_INFO\t(ActionTypes.js)"
+			],
+			[
+				"getu",
+				"getUserInfoFN"
+			],
+			[
+				"to",
+				"toString\t(DB.js)"
+			],
+			[
+				"err_",
+				"err_error"
+			],
+			[
+				"err_ac",
+				"err_account_pd_null\t(DB.js)"
+			],
+			[
+				"call",
+				"callback"
+			],
+			[
+				"con",
+				"connection"
+			],
+			[
+				"tr",
+				"transaction"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"fi",
+				"field"
+			],
+			[
+				"P",
+				"prototype〔variable〕"
+			],
+			[
+				"exp",
+				"exports\t(users.js)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"TE",
 				"TextInput"
 			],
 			[
 				"T",
 				"Text"
-			],
-			[
-				"set",
-				"setInterval"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactActivity.java",
+			"settings":
+			{
+				"buffer_size": 3310,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java",
+			"settings":
+			{
+				"buffer_size": 7171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactApplication.java",
+			"settings":
+			{
+				"buffer_size": 489,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactNativeHost.java",
+			"settings":
+			{
+				"buffer_size": 4973,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactInstanceManager.java",
+			"settings":
+			{
+				"buffer_size": 15972,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/cxxbridge/JSBundleLoader.java",
+			"settings":
+			{
+				"buffer_size": 3542,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/cxxbridge/CatalystInstanceImpl.java",
+			"settings":
+			{
+				"buffer_size": 18276,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CatalystInstanceImpl.h",
+			"settings":
+			{
+				"buffer_size": 2416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CxxModuleWrapper.cpp",
+			"settings":
+			{
+				"buffer_size": 9039,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CatalystInstanceImpl.cpp",
+			"settings":
+			{
+				"buffer_size": 10655,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\npackage com.qqdemo;\n\nimport android.graphics.Color;\nimport android.os.Build;\nimport android.os.Bundle;\nimport android.view.View;\nimport android.view.Window;\nimport android.view.WindowManager;\n\nimport com.facebook.react.ReactActivity;\n\npublic class MainActivity extends ReactActivity {\n\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        Window window = getWindow();\n//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {\n//            window.setStatusBarColor(Color.TRANSPARENT);   //这里动态修改颜色\n//        }\n    }\n\n    /**\n     * Returns the name of the main component registered from JavaScript.\n     * This is used to schedule rendering of the component.\n     */\n    @Override\n    protected String getMainComponentName() {\n        return \"QQDemo\";\n    }\n\n}\n",
+			"file": "/E/work/QQDemo/android/app/src/main/java/com/qqdemo/MainActivity.java",
+			"file_size": 860,
+			"file_write_time": 131248854283071601,
+			"settings":
+			{
+				"buffer_size": 845,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactRootView.java",
+			"settings":
+			{
+				"buffer_size": 16053,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 131 files for \"listview\"\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\views\\recyclerview\\RecyclerViewBackedScrollView.java:\n   85  \n   86    /**\n   87:    * JavaScript ListView implementation rely on getting correct scroll offset. This class helps\n   88     * with calculating that \"real\" offset of items in recycler view as those are not provided by\n   89     * android widget implementation ({@link #onScrollChanged} is called with offset 0). We can't use\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\views\\recyclerview\\RecyclerViewBackedScrollViewManager.java:\n   31    }\n   32  \n   33:   // TODO(8624925): Implement removeClippedSubviews support for native ListView\n   34  \n   35    @ReactProp(name = \"onContentSizeChange\")\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\views\\view\\ReactViewGroup.java:\n  297      boolean needUpdateClippingRecursive = false;\n  298      // We never want to clip children that are being animated, as this can easily break layout :\n  299:     // when layout animation changes size and/or position of views contained inside a listview that\n  300      // clips offscreen children, we need to ensure that, when view exits the viewport, final size\n  301:     // and position is set prior to removing the view from its listview parent.\n  302      // Otherwise, when view gets re-attached again, i.e when it re-enters the viewport after scroll,\n  303      // it won't be size and located properly.\n\n4 matches across 3 files\n\n\nSearching 76 files for \"listview\"\n\nE:\\work\\react-native-master\\Libraries\\Components\\RefreshControl\\RefreshControl.js:\n   27  \n   28  /**\n   29:  * This component is used inside a ScrollView or ListView to add pull to refresh\n   30   * functionality. When the ScrollView is at `scrollY: 0`, swiping down\n   31   * triggers an `onRefresh` event.\n   ..\n   51   *   render() {\n   52   *     return (\n   53:  *       <ListView\n   54   *         refreshControl={\n   55   *           <RefreshControl\n   ..\n   61   *       >\n   62   *       ...\n   63:  *       </ListView>\n   64   *     );\n   65   *   }\n\nE:\\work\\react-native-master\\Libraries\\Components\\ScrollView\\RecyclerViewBackedScrollView.android.js:\n   26   *\n   27   * CAUTION: This is an experimental component and should only be used together\n   28:  * with javascript implementation of list view (see ListView.js). In order to\n   29   * use it pass this component as `renderScrollComponent` to the list view. For\n   30   * now only horizontal scrolling is supported.\n   ..\n   34   * ```\n   35   * getInitialState: function() {\n   36:  *   var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});\n   37   *   return {\n   38   *     dataSource: ds.cloneWithRows(['row 1', 'row 2']),\n   ..\n   42   * render: function() {\n   43   *   return (\n   44:  *     <ListView\n   45   *       dataSource={this.state.dataSource}\n   46   *       renderRow={rowData => <Text>{rowData}</Text>}\n\n6 matches across 2 files\n\n\nSearching 676 files for \"react-clone-referenced-element\"\n\nE:\\work\\react-native-master\\Libraries\\CustomComponents\\ListView\\ListView.js:\n   42  var TimerMixin = require('react-timer-mixin');\n   43  \n   44: var cloneReferencedElement = require('react-clone-referenced-element');\n   45  var isEmpty = require('isEmpty');\n   46  var merge = require('merge');\n\n1 match in 1 file\n\n\nSearching 676 files for \"cloneReferencedElement\"\n\nE:\\work\\react-native-master\\Libraries\\CustomComponents\\ListView\\ListView.js:\n   42  var TimerMixin = require('react-timer-mixin');\n   43  \n   44: var cloneReferencedElement = require('react-clone-referenced-element');\n   45  var isEmpty = require('isEmpty');\n   46  var merge = require('merge');\n   ..\n  477      });\n  478  \n  479:     return cloneReferencedElement(renderScrollComponent(props), {\n  480        ref: this._setScrollComponentRef,\n  481        onContentSizeChange: this._onContentSizeChange,\n\n2 matches in 1 file\n\n\nSearching 521 files for \"loadScript\"\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\CatalystInstanceImpl.java:\n  181                                         ModuleRegistryHolder registryHolder);\n  182  \n  183:   /* package */ native void loadScriptFromAssets(AssetManager assetManager, String assetURL);\n  184:   /* package */ native void loadScriptFromFile(String fileName, String sourceURL);\n  185:   /* package */ native void loadScriptFromOptimizedBundle(String path, String sourceURL, int flags);\n  186  \n  187    @Override\n  ...\n  190      mJSBundleHasLoaded = true;\n  191      // incrementPendingJSCalls();\n  192:     mJSBundleLoader.loadScript(CatalystInstanceImpl.this);\n  193  \n  194      synchronized (mJSCallsPendingInitLock) {\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\JSBundleLoader.java:\n   30      return new JSBundleLoader() {\n   31        @Override\n   32:       public void loadScript(CatalystInstanceImpl instance) {\n   33:         instance.loadScriptFromAssets(context.getAssets(), assetUrl);\n   34        }\n   35  \n   ..\n   48      return new JSBundleLoader() {\n   49        @Override\n   50:       public void loadScript(CatalystInstanceImpl instance) {\n   51:         instance.loadScriptFromFile(fileName, fileName);\n   52        }\n   53  \n   ..\n   71      return new JSBundleLoader() {\n   72        @Override\n   73:       public void loadScript(CatalystInstanceImpl instance) {\n   74          try {\n   75:           instance.loadScriptFromFile(cachedFileLocation, sourceURL);\n   76          } catch (Exception e) {\n   77            throw DebugServerException.makeGeneric(e.getMessage(), e);\n   ..\n   95      return new JSBundleLoader() {\n   96        @Override\n   97:       public void loadScript(CatalystInstanceImpl instance) {\n   98:         instance.loadScriptFromFile(null, proxySourceURL);\n   99        }\n  100  \n  ...\n  106    }\n  107  \n  108:   public abstract void loadScript(CatalystInstanceImpl instance);\n  109    public abstract String getSourceUrl();\n  110  }\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\OptimizedJSBundleLoader.java:\n   25  \n   26    @Override\n   27:   public void loadScript(CatalystInstanceImpl instance) {\n   28:     instance.loadScriptFromOptimizedBundle(mPath, mSourceURL, mLoadFlags);\n   29    }\n   30  \n\n15 matches across 3 files\n\n\nSearching 566 files for \"loadScript\"\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\CatalystInstanceImpl.java:\n  181                                         ModuleRegistryHolder registryHolder);\n  182  \n  183:   /* package */ native void loadScriptFromAssets(AssetManager assetManager, String assetURL);\n  184:   /* package */ native void loadScriptFromFile(String fileName, String sourceURL);\n  185:   /* package */ native void loadScriptFromOptimizedBundle(String path, String sourceURL, int flags);\n  186  \n  187    @Override\n  ...\n  190      mJSBundleHasLoaded = true;\n  191      // incrementPendingJSCalls();\n  192:     mJSBundleLoader.loadScript(CatalystInstanceImpl.this);\n  193  \n  194      synchronized (mJSCallsPendingInitLock) {\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\JSBundleLoader.java:\n   30      return new JSBundleLoader() {\n   31        @Override\n   32:       public void loadScript(CatalystInstanceImpl instance) {\n   33:         instance.loadScriptFromAssets(context.getAssets(), assetUrl);\n   34        }\n   35  \n   ..\n   48      return new JSBundleLoader() {\n   49        @Override\n   50:       public void loadScript(CatalystInstanceImpl instance) {\n   51:         instance.loadScriptFromFile(fileName, fileName);\n   52        }\n   53  \n   ..\n   71      return new JSBundleLoader() {\n   72        @Override\n   73:       public void loadScript(CatalystInstanceImpl instance) {\n   74          try {\n   75:           instance.loadScriptFromFile(cachedFileLocation, sourceURL);\n   76          } catch (Exception e) {\n   77            throw DebugServerException.makeGeneric(e.getMessage(), e);\n   ..\n   95      return new JSBundleLoader() {\n   96        @Override\n   97:       public void loadScript(CatalystInstanceImpl instance) {\n   98:         instance.loadScriptFromFile(null, proxySourceURL);\n   99        }\n  100  \n  ...\n  106    }\n  107  \n  108:   public abstract void loadScript(CatalystInstanceImpl instance);\n  109    public abstract String getSourceUrl();\n  110  }\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\OptimizedJSBundleLoader.java:\n   25  \n   26    @Override\n   27:   public void loadScript(CatalystInstanceImpl instance) {\n   28:     instance.loadScriptFromOptimizedBundle(mPath, mSourceURL, mLoadFlags);\n   29    }\n   30  \n\n15 matches across 3 files\n\n\nSearching 566 files for \"runJSBundle\"\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\bridge\\CatalystInstance.java:\n   23  @DoNotStrip\n   24  public interface CatalystInstance extends MemoryPressureListener {\n   25:   void runJSBundle();\n   26    // This is called from java code, so it won't be stripped anyway, but proguard will rename it,\n   27    // which this prevents.\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\cxxbridge\\CatalystInstanceImpl.java:\n  186  \n  187    @Override\n  188:   public void runJSBundle() {\n  189      Assertions.assertCondition(!mJSBundleHasLoaded, \"JS bundle was already loaded!\");\n  190      mJSBundleHasLoaded = true;\n  ...\n  298      Assertions.assertCondition(\n  299          mAcceptCalls,\n  300:         \"RunJSBundle hasn't completed.\");\n  301      mInitialized = true;\n  302      mJavaRegistry.notifyCatalystInstanceInitialized();\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\XReactInstanceManagerImpl.java:\n  925  \n  926      reactContext.initializeWithInstance(catalystInstance);\n  927:     catalystInstance.runJSBundle();\n  928  \n  929      return reactContext;\n\n4 matches across 3 files\n\n\nSearching 47 files for \"loadScriptFromFile\"\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\jni\\xreact\\jni\\CatalystInstanceImpl.cpp:\n  107                         \"(Landroid/content/res/AssetManager;Ljava/lang/String;)V\",\n  108                         CatalystInstanceImpl::loadScriptFromAssets),\n  109:       makeNativeMethod(\"loadScriptFromFile\", CatalystInstanceImpl::loadScriptFromFile),\n  110        makeNativeMethod(\"loadScriptFromOptimizedBundle\",\n  111                         CatalystInstanceImpl::loadScriptFromOptimizedBundle),\n  ...\n  188  }\n  189  \n  190: void CatalystInstanceImpl::loadScriptFromFile(jni::alias_ref<jstring> fileName,\n  191                                                const std::string& sourceURL) {\n  192  \n  ...\n  201        sourceURL);\n  202    } else {\n  203:     instance_->loadScriptFromFile(file, sourceURL);\n  204    }\n  205  }\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\jni\\xreact\\jni\\CatalystInstanceImpl.h:\n   51        ModuleRegistryHolder* mrh);\n   52    void loadScriptFromAssets(jobject assetManager, const std::string& assetURL);\n   53:   void loadScriptFromFile(jni::alias_ref<jstring> fileName, const std::string& sourceURL);\n   54    void loadScriptFromOptimizedBundle(const std::string& bundlePath, const std::string& sourceURL, jint flags);\n   55    void callJSFunction(JExecutorToken* token, std::string module, std::string method, NativeArray* arguments);\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\jni\\xreact\\jni\\JSLoader.cpp:\n   68  }\n   69  \n   70: std::string loadScriptFromFile(const std::string& fileName) {\n   71    #ifdef WITH_FBSYSTRACE\n   72:   FbSystraceSection s(TRACE_TAG_REACT_CXX_BRIDGE, \"reactbridge_jni_loadScriptFromFile\",\n   73      \"fileName\", fileName);\n   74    #endif\n\nE:\\work\\react-native-master\\ReactAndroid\\src\\main\\jni\\xreact\\jni\\JSLoader.h:\n   27   * Helper method for loading JS script from a file\n   28   */\n   29: std::string loadScriptFromFile(const std::string& fileName);\n   30  \n   31  void registerJSLoaderNatives();\n\n8 matches across 4 files\n",
+			"settings":
+			{
+				"buffer_size": 12083,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/JSLoader.cpp",
+			"settings":
+			{
+				"buffer_size": 3314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/XReactInstanceManagerImpl.java",
+			"settings":
+			{
+				"buffer_size": 37909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/Libraries/CustomComponents/ListView/ListView.js",
+			"settings":
+			{
+				"buffer_size": 25217,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/QQDemo/src/containers/friendsList.js",
+			"settings":
+			{
+				"buffer_size": 12381,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/packager/react-packager/src/Resolver/polyfills/require.js",
+			"settings":
+			{
+				"buffer_size": 7896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/packager/react-packager/src/Resolver/index.js",
+			"settings":
+			{
+				"buffer_size": 7099,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/packager/react-packager/src/Bundler/Bundle.js",
+			"settings":
+			{
+				"buffer_size": 13952,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/local-cli/cliEntry.js",
+			"settings":
+			{
+				"buffer_size": 4648,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 659,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.android.js",
+			"settings":
+			{
+				"buffer_size": 300,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/local-cli/util/Config.js",
+			"settings":
+			{
+				"buffer_size": 3056,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/local-cli/commands.js",
+			"settings":
+			{
+				"buffer_size": 1925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/QQDemo/src/components/friendListItem.js",
+			"settings":
+			{
+				"buffer_size": 4092,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/E/work/react-native-master/Libraries/CustomComponents/ListView/ListViewDataSource.js",
+			"settings":
+			{
+				"buffer_size": 14227,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/work/QQDemo/node_modules/react-native/Libraries/CustomComponents/ListView/ListViewDataSource.js",
+			"settings":
+			{
+				"buffer_size": 14378,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -33,6 +679,10 @@
 		[
 			[
 				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
 				"Package Control: Install Package"
 			]
 		],
@@ -57,10 +707,74 @@
 	},
 	"expanded_folders":
 	[
-		"/E/work/RNLooking"
+		"/E/work/RNLooking",
+		"/E/work/RNLooking/app"
 	],
 	"file_history":
 	[
+		"/E/work/RNLooking/node_modules/react-native/ReactAndroid/src/main/java/com/facebook/react/cxxbridge/JSBundleLoader.java",
+		"/E/work/react-native-master/ReactCommon/cxxreact/JSBundleType.h",
+		"/E/work/QQDemo/src/components/FriendListItem.js",
+		"/E/work/QQDemo/src/components/Header.js",
+		"/E/work/QQDemo/src/components/TouchMoveItem.js",
+		"/E/work/QQDemo/node_modules/react-native-vector-icons/lib/create-icon-set.js",
+		"/E/work/react-native-master/Examples/UIExplorer/js/TransformExample.js",
+		"/E/work/QQDemo/src/containers/messageList.js",
+		"/E/work/QQDemo/src/containers/zone.js",
+		"/E/work/QQDemo/src/containers/app.js",
+		"/E/work/QQDemo/src/containers/friendsList.js",
+		"/E/work/QQDemo/src/reducers/appReducers.js",
+		"/E/work/QQDemo/src/actions/appActions.js",
+		"/E/work/QQDemo/src/utils/utils.js",
+		"/E/work/QQDemo/src/constants/actionTypes.js",
+		"/E/work/QQDemo/src/containers/userList.js",
+		"/E/work/QQDemo/src/constants/skins.js",
+		"/E/work/QQDemo/src/constants/config.js",
+		"/E/work/QQDemo/src/components/Expander.js",
+		"/E/work/react-native-master/Examples/UIExplorer/js/AnimatedGratuitousApp/AnExTilt.js",
+		"/E/work/QQDemo/src/index.js",
+		"/E/work/RNLooking/node_modules/react-native/Libraries/react-native/react-native.js",
+		"/E/work/QQDemo/src/containers/UserList.js",
+		"/E/work/RNLooking/package.json",
+		"/E/work/QQDemo/src/modules/skin.js",
+		"/E/work/QQDemo/src/configureStore.js",
+		"/E/work/suzyApp-master/src/containers/post/PostList.js",
+		"/E/work/suzyApp-master/src/actions/postActions.js",
+		"/E/work/suzyApp-master/src/reducers/postReducers.js",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/E/work/suzyApp-master/src/containers/App.js",
+		"/E/work/suzyApp-master/src/reducers/index.js",
+		"/E/work/suzyApp-master/src/createStore.js",
+		"/E/work/suzyApp-master/src/index.js",
+		"/E/work/QQDemo/src/reducers/index.js",
+		"/E/work/suzyApp-master/src/reducers/appReducers.js",
+		"/C/Users/win10/Downloads/QQ_422/assets/html5/1002/config.json",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/src/main/java/com/hl_ly_app_rn/module/RNLessonParserModule.java",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/src/main/AndroidManifest.xml",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/build.gradle",
+		"/E/work/QQDemo/index.android.js",
+		"/E/work/suzyApp-master/src/components/Header.js",
+		"/E/work/QQDemo/src/utils/http.js",
+		"/E/work/QQDemo/src/constants/ActionTypes.js",
+		"/E/work/QQDemo/src/reducers/appReduces.js",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/src/main/java/com/hl_ly_app_rn/module/RNLessonParserPackage.java",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/src/main/java/com/hl_ly_app_rn/MainApplication.java",
+		"/E/work/RNLooking/server/routes/users.js",
+		"/E/work/RNLooking/server/routes/login.js",
+		"/E/work/RNLooking/server/data/DB.js",
+		"/E/work/RNLooking/server/data/Packet.js",
+		"/E/work/android-sdk/README.md",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/AndroidManifest.xml",
+		"/F/work/projects/HL_LY_APP/HL_LY_APP_code/branches/HL_LY_APP_RN/android/gradle/wrapper/gradle-wrapper.properties",
+		"/E/work/RNLooking/server/utils/log.js",
+		"/E/work/RNLooking/server/config.js",
+		"/E/work/RNLooking/server/app.js",
+		"/E/work/RNLooking/server/data/UserData.js",
+		"/E/work/RNLooking/server/npm-debug.log",
+		"/E/work/RNLooking/server/db/user.js",
+		"/E/work/RNLooking/server/db/DB.js",
+		"/E/work/RNLooking/server/modules/user.js",
 		"/E/work/MyProject/index.android.js",
 		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/Babel/Babel.sublime-settings",
 		"/C/Users/win10/AppData/Roaming/Sublime Text 3/Packages/User/Babel.sublime-settings",
@@ -113,13 +827,25 @@
 	],
 	"find":
 	{
-		"height": 30.0
+		"height": 38.0
 	},
 	"find_in_files":
 	{
 		"height": 102.0,
 		"where_history":
 		[
+			"E:\\work\\react-native-master\\ReactAndroid\\src\\main\\jni\\xreact\\jni",
+			"E:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook",
+			"E:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react",
+			"E:\\work\\react-native-master\\Libraries",
+			"E:\\work\\react-native-master\\Libraries\\Components",
+			"E:\\work\\react-native-master\\ReactAndroid\\src\\main\\java\\com\\facebook\\react\\views",
+			"E:\\work\\react-native-master\\Examples\\UIExplorer",
+			"E:\\work\\QQDemo\\node_modules\\react-native-vector-icons\\lib",
+			"E:\\work\\QQDemo\\node_modules\\react-native-vector-icons",
+			"E:\\work\\react-native-master\\Examples\\UIExplorer\\js\\AnimatedGratuitousApp",
+			"E:\\work\\QQDemo\\node_modules",
+			"E:\\work\\QQDemo\\src",
 			"E:\\work\\MyProject\\android",
 			"E:\\work\\MyProject\\node_modules",
 			"F:\\work\\projects\\ndd\\cocos2d\\cocos\\platform\\android\\java\\src\\org\\cocos2dx\\lib"
@@ -130,6 +856,77 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"instance_",
+			"jsfile",
+			"loadScriptFromFile",
+			"mApplicationContext",
+			"runJSBundle",
+			"loadScript",
+			"getBundleAssetName",
+			"mJSBundleTempFile",
+			"JS_BUNDLE_FILE_NAME",
+			"sectionArrowRight",
+			"listItemIcon",
+			"transform",
+			"listItemContainer",
+			"_renderRowItem",
+			"listItemGroupContainerExpander",
+			"groupsExpander",
+			"sectionContainer",
+			"friendDataCache",
+			"expander",
+			"_sectionPressed",
+			"this.sectionIdentities",
+			"sectionIdentities",
+			"rowIdentities",
+			"this.sectionIdentities",
+			"_calculateDirtyArrays",
+			"keyedDictionaryFromArray",
+			"prevSectionsHash",
+			"_dataBlob",
+			"_dirtyRows",
+			"_calculateDirtyArrays",
+			"this._dataBlob",
+			"_dataBlob",
+			"sectionHeaderHasChanged",
+			"_calculateDirtyArrays",
+			"_dirtyRows",
+			"_dirtySections",
+			"cloneReferencedElement",
+			"react-clone-referenced-element",
+			"cloneReferencedElement",
+			"children",
+			"listview",
+			"transform",
+			"this.ds",
+			"listHeadBottomItemText",
+			"listHeadBottom",
+			"renderh",
+			"searchContainer",
+			"contactSelected",
+			"phnoeSelected",
+			"tint",
+			"tintColor",
+			"leftMoveOff",
+			"moveRelease",
+			"_moveRelease",
+			"listItemRightContainer",
+			"listItemRightBtn3",
+			"listItemRightContainer",
+			"Left",
+			"?",
+			"addListener",
+			"get",
+			"/**",
+			"moveOff",
+			"__getHandler",
+			"EVENT",
+			"console",
+			"fetchingNext",
+			"getUsers",
+			"tintColor",
+			"LessonParserModule",
+			"RNLessonParserModule",
 			"mainactivity",
 			"ali",
 			":\n",
@@ -155,6 +952,13 @@
 		"regex": false,
 		"replace_history":
 		[
+			"phoneSelected",
+			"contactSelected",
+			"moveOff",
+			"Right",
+			"renderRight",
+			"Right",
+			"leftMoveOff",
 			".",
 			"'"
 		],
@@ -167,8 +971,1079 @@
 	"groups":
 	[
 		{
+			"selected": 22,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactActivity.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1701,
+								1710
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 326.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactActivityDelegate.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6111,
+								6129
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1122.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactApplication.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactNativeHost.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4973,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2646,
+								2653
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1296.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactInstanceManager.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 15972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10490,
+								10504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5544.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/cxxbridge/JSBundleLoader.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3542,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3467,
+								3487
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/cxxbridge/CatalystInstanceImpl.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6836,
+								6818
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3628.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CatalystInstanceImpl.h",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								799,
+								807
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 792.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CxxModuleWrapper.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/CatalystInstanceImpl.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10655,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2711,
+								2729
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2352.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/E/work/QQDemo/android/app/src/main/java/com/qqdemo/MainActivity.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/ReactRootView.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1848.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12083,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										208,
+										216
+									],
+									[
+										731,
+										739
+									],
+									[
+										1158,
+										1166
+									],
+									[
+										1347,
+										1355
+									],
+									[
+										1746,
+										1754
+									],
+									[
+										1966,
+										1974
+									],
+									[
+										2108,
+										2116
+									],
+									[
+										2406,
+										2414
+									],
+									[
+										2657,
+										2665
+									],
+									[
+										2876,
+										2884
+									],
+									[
+										3268,
+										3298
+									],
+									[
+										3601,
+										3623
+									],
+									[
+										3794,
+										3816
+									],
+									[
+										4256,
+										4266
+									],
+									[
+										4357,
+										4367
+									],
+									[
+										4447,
+										4457
+									],
+									[
+										4659,
+										4669
+									],
+									[
+										4953,
+										4963
+									],
+									[
+										5021,
+										5031
+									],
+									[
+										5192,
+										5202
+									],
+									[
+										5260,
+										5270
+									],
+									[
+										5418,
+										5428
+									],
+									[
+										5509,
+										5519
+									],
+									[
+										5770,
+										5780
+									],
+									[
+										5838,
+										5848
+									],
+									[
+										5958,
+										5968
+									],
+									[
+										6221,
+										6231
+									],
+									[
+										6285,
+										6295
+									],
+									[
+										6671,
+										6681
+									],
+									[
+										6772,
+										6782
+									],
+									[
+										6862,
+										6872
+									],
+									[
+										7074,
+										7084
+									],
+									[
+										7368,
+										7378
+									],
+									[
+										7436,
+										7446
+									],
+									[
+										7607,
+										7617
+									],
+									[
+										7675,
+										7685
+									],
+									[
+										7833,
+										7843
+									],
+									[
+										7924,
+										7934
+									],
+									[
+										8185,
+										8195
+									],
+									[
+										8253,
+										8263
+									],
+									[
+										8373,
+										8383
+									],
+									[
+										8636,
+										8646
+									],
+									[
+										8700,
+										8710
+									],
+									[
+										9060,
+										9071
+									],
+									[
+										9372,
+										9383
+									],
+									[
+										9609,
+										9620
+									],
+									[
+										9945,
+										9956
+									],
+									[
+										10359,
+										10377
+									],
+									[
+										10402,
+										10420
+									],
+									[
+										10627,
+										10645
+									],
+									[
+										10844,
+										10862
+									],
+									[
+										11133,
+										11151
+									],
+									[
+										11568,
+										11586
+									],
+									[
+										11724,
+										11742
+									],
+									[
+										11961,
+										11979
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								10641,
+								10641
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 8,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 5572.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/jni/xreact/jni/JSLoader.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3309,
+								3309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1409.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "/E/work/react-native-master/ReactAndroid/src/main/java/com/facebook/react/XReactInstanceManagerImpl.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								35845,
+								35868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 19864.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "/E/work/react-native-master/Libraries/CustomComponents/ListView/ListView.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25217,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15337,
+								15362
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 7720.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 25,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/E/work/QQDemo/src/containers/friendsList.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10946,
+								10958
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 23,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "/E/work/react-native-master/packager/react-packager/src/Resolver/polyfills/require.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2224,
+								2231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1307.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/E/work/react-native-master/packager/react-packager/src/Resolver/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7099,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4399,
+								4414
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4620.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "/E/work/react-native-master/packager/react-packager/src/Bundler/Bundle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3526,
+								3526
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "/E/work/react-native-master/local-cli/cliEntry.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4278,
+								4286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 132.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "index.android.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "/E/work/react-native-master/local-cli/util/Config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "/E/work/react-native-master/local-cli/commands.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1875,
+								1890
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 25,
+					"file": "/E/work/QQDemo/src/components/friendListItem.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4092,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2856,
+								2856
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2046.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 24,
+					"type": "text"
+				},
+				{
+					"buffer": 26,
+					"file": "/E/work/react-native-master/Libraries/CustomComponents/ListView/ListViewDataSource.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6865,
+								6889
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4288.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 27,
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "/E/work/QQDemo/node_modules/react-native/Libraries/CustomComponents/ListView/ListViewDataSource.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 14378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8255,
+								8255
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8248.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 26,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -178,7 +2053,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 38.0
 	},
 	"layout":
 	{
@@ -211,7 +2086,7 @@
 	"project": "RNLooking.sublime-project",
 	"replace":
 	{
-		"height": 56.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -249,7 +2124,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 299.0,
+	"side_bar_width": 406.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

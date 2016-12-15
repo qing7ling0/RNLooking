@@ -9,9 +9,9 @@ import {
   Image
 } from 'react-native'
 
-import {skin} from '../modules/skin'
-import utils from '../utils/utils'
-import * as config from '../constants/config'
+import {Skin} from '../modules/Skin'
+import Utils from '../utils/Utils'
+import * as Config from '../constants/Config'
 import TouchMoveItem from '../components/TouchMoveItem'
 
 const listTestIcons = [
@@ -31,7 +31,7 @@ const listTestIcons = [
   require('../image/head/14.bmp'),
   require('../image/head/15.bmp'),
   require('../image/head/16.bmp'),
-]
+];
 
 export default class FriendsListItem extends Component{
   constructor(props) {
@@ -45,7 +45,7 @@ export default class FriendsListItem extends Component{
   }
 
   render() {
-    let {rowData, sectionID, rowID, expander} = this.props;
+    let {rowData, sectionID, rowID} = this.props;
     let items = null;
     if (this.rowCaches === null) {
       this.rowCaches = [];
@@ -56,7 +56,6 @@ export default class FriendsListItem extends Component{
     }
 
     let viewStyle = this.state.expander ? styles.listItemGroupContainerExpander : styles.listItemGroupContainerUnexpander;
-
     return (
       <View 
         key={sectionID + '-' + rowID} 
@@ -71,6 +70,7 @@ export default class FriendsListItem extends Component{
     return (<TouchableHighlight
       underlayColor= {'#c6dff1'}
       onPress={()=>{}}
+      style={styles.container}
       key={sectionID + '-' + rowID + '-' + itemID}>
       <View style={styles.listItemContainer}>
         <Image style={styles.listItemIcon} source={listTestIcons[itemData.icon]} />
@@ -90,10 +90,11 @@ export default class FriendsListItem extends Component{
     </TouchableHighlight>);
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: skin.bodyBackgroundColor
+    backgroundColor: Skin.bodyBackgroundColor
   },
   flex: {
     flex: 1
@@ -104,29 +105,32 @@ const styles = StyleSheet.create({
     overflow: 'hidden'
   },
   listItemGroupContainerUnexpander:{
+    flex: 1,
+    flexDirection: 'column',
+    overflow: 'hidden',
     height : 0
   },
   listItemContainer: {
     flex: 1,
-    height: utils.px2dp(200),
+    height: Utils.px2dp(200),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderColor: skin.messageListItemBorderColor,
-    borderBottomWidth: utils.px2dp(1),
-    paddingLeft: utils.px2dp(36),
-    paddingRight: utils.px2dp(36),
+    borderColor: Skin.messageListItemBorderColor,
+    borderBottomWidth: Utils.px2dp(1),
+    paddingLeft: Utils.px2dp(36),
+    paddingRight: Utils.px2dp(36),
   },
   listItemIcon: {
-    width: utils.px2dp(150),
-    height: utils.px2dp(150),
-    borderRadius: utils.px2dp(75),
-    marginRight: utils.px2dp(36)
+    width: Utils.px2dp(150),
+    height: Utils.px2dp(150),
+    borderRadius: Utils.px2dp(75),
+    marginRight: Utils.px2dp(36)
   },
   listItemRightText: {
-    color: skin.messageListItemDateColor,
-    fontSize: utils.fontSize2RN(40),
-    marginBottom: utils.px2dp(6),
+    color: Skin.messageListItemDateColor,
+    fontSize: Utils.fontSize2RN(40),
+    marginBottom: Utils.px2dp(6),
   },
   listItemRight: {
     flex: 1,
@@ -145,12 +149,12 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   listItemTitle: {
-    color: skin.messageListItemTitleColor,
-    fontSize: utils.fontSize2RN(50),
+    color: Skin.messageListItemTitleColor,
+    fontSize: Utils.fontSize2RN(50),
   },
   listItemIntro: {
     flex: 1,
-    color: skin.messageListItemIntroColor,
-    fontSize: utils.fontSize2RN(40),
+    color: Skin.messageListItemIntroColor,
+    fontSize: Utils.fontSize2RN(40),
   }
 })

@@ -11,9 +11,9 @@ import {StyleSheet,
   Animated
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import {skin} from '../modules/skin';
-import utils from '../utils/utils';
-import * as config from '../constants/config.js';
+import {Skin} from '../modules/Skin';
+import Utils from '../utils/Utils';
+import * as Config from '../constants/Config.js';
 
 export default class TouchMoveItem extends Component {
   constructor(props) {

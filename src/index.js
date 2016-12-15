@@ -1,17 +1,33 @@
 import React, { Component } from 'react';
-var ReactNative = require('react-native');
+var ReactNative, {
+  View,
+  Navigator} = require('react-native');
 import {Provider} from 'react-redux';
-import App from './containers/app';
+import SplashScene from './containers/SplashScene';
  
-import configureStore from './configureStore';
-const store=configureStore();//获取store
+import ConfigureStore from './ConfigureStore';
+const store = ConfigureStore();//获取store
  
 export default class index extends Component{
 
   render(){
-     return(
+    let defaultConfig = Navigator.SceneConfigs.FloatFromRight;
+
+    return(
       <Provider store={store}>
-        <App />
+        <Navigator
+          initialRoute={{ component: SplashScene, params: {}, sceneConfig:defaultConfig }}
+          configureScene={(route) => {
+            if (route.sceneConfig) {
+              return route.sceneConfig;
+            }
+            return Navigator.SceneConfigs.FloatFromBottom;
+          }}
+          renderScene={(route, navigator) => {
+            let Component = route.component;
+            return (<Component {...route.params} navigator={navigator} />);
+          }}
+        />
       </Provider>
      );
    }

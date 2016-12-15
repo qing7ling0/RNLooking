@@ -7,11 +7,19 @@
     "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output android/app/src/main/assets/index.android.bundle --sourcemap-output android/app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/"
   },
   "dependencies": {
-    "react": "15.3.1",
-    "react-native": "^0.37.0",
+    "react": "15.4.1",
+    "react-native": "^0.39.0",
     "react-native-htmlview": "^0.5.0",
     "react-native-modal": "^0.4.0",
     "react-native-navbar": "^1.5.4",
-    "react-native-swiper": "^1.5.3"
+    "react-native-swiper": "^1.5.3",
+    "react-native-loading-spinner-overlay": "^0.3.0",
+    "react-native-tab-navigator": "^0.3.3",
+    "react-native-vector-icons": "^3.0.0",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.1.0",
+    "redux-devtools": "^3.3.1",
+    "redux-thunk": "^2.1.0"
   }
 }

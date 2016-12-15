@@ -1,4 +1,4 @@
-import * as types from '../constants/actionTypes'
+import * as ActionTypes from '../constants/ActionTypes'
 
 module.exports = {
   /**
@@ -8,7 +8,7 @@ module.exports = {
    * @param {function} callback 请求成功回调
    */
   get: function (url, successCallback, failCallback, dispatch) {
-    dispatch({ type: types.FETCH_START })
+    dispatch({ type: ActionTypes.FETCH_START })
     fetch(url, {
       method: 'get',
       headers: {
@@ -17,16 +17,16 @@ module.exports = {
     })
       .then((response) => response.text())
       .then((responseText) => {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         successCallback(JSON.parse(responseText));
       })
       .catch(function (err) {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         failCallback && failCallback(err);
       });
   },
   put: function (url, data,successCallback, failCallback, dispatch) {
-    dispatch({ type: types.FETCH_START })
+    dispatch({ type: ActionTypes.FETCH_START })
     fetch(url, {
       method: 'put',
       headers: {
@@ -37,16 +37,16 @@ module.exports = {
     })
       .then((response) => response.text())
       .then((responseText) => {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         successCallback(JSON.parse(responseText));
       })
       .catch(function (err) {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         failCallback && failCallback(err);
       });
   },
   post: function (url, data, successCallback, failCallback, dispatch) {
-    dispatch({ type: types.FETCH_START })
+    dispatch({ type: ActionTypes.FETCH_START })
     fetch(url, {
       method: 'post',
       headers: {
@@ -57,11 +57,11 @@ module.exports = {
     })
       .then((response) => response.text())
       .then((responseText) => {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         successCallback(JSON.parse(responseText));
       })
       .catch(function (err) {
-        dispatch({ type: types.FETCH_FINISH })
+        dispatch({ type: ActionTypes.FETCH_FINISH })
         failCallback && failCallback(err);
       });
   }

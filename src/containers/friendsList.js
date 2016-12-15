@@ -16,15 +16,15 @@ import {StyleSheet,
   TouchableHighlight
 } from 'react-native';
 import {bindActionCreators} from 'redux'
-import * as appActions from '../actions/appActions'
+import * as AppActions from '../actions/AppActions'
 import { connect } from 'react-redux'
-import utils from '../utils/utils'
+import Utils from '../utils/Utils'
 import Icon from 'react-native-vector-icons/Ionicons';
 import Header from '../components/Header'
-import {skin} from '../modules/skin';
-import * as config from '../constants/config';
+import {Skin} from '../modules/Skin';
+import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem';
-import FriendsListItem from '../components/friendListItem';
+import FriendsListItem from '../components/FriendListItem';
 
 class FriendsList extends Component {
   constructor(props) {
@@ -90,7 +90,7 @@ class FriendsList extends Component {
             <ListView
               dataSource={datas}
               initialListSize={0}
-              pageSize={5}
+              pageSize={1}
               renderRow={this._renderRow.bind(this)}
               renderSectionHeader={this._renderSection.bind(this)}
               scrollRenderAheadDistance={100}
@@ -115,21 +115,21 @@ class FriendsList extends Component {
 
   _headOptionCallback(type) {
     switch(type) {
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_MENU:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_MENU:
       {
         const {showMoreMenu} = this.props;
         showMoreMenu(this._renderMoreMenu.bind(this));
       }
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MESSAGE_LIST:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MESSAGE_LIST:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_USER_INFO:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_USER_INFO:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_PHONE_LIST:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_PHONE_LIST:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_ZONE:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_MORE_ZONE:
       break;
-      case config.HEAD_OPTION_TYPE.TYPE_SHOW_ADD_FRIEND_VIEW:
+      case Config.HEAD_OPTION_TYPE.TYPE_SHOW_ADD_FRIEND_VIEW:
       break;
     }
   }
@@ -205,6 +205,7 @@ class FriendsList extends Component {
     return (
       <TouchableHighlight
         underlayColor= {'#f4f4f4'}
+        style={styles.flex}
         onPress={()=>{
           this._sectionPressed.bind(this)(sectionData, sectionID);
         }}
@@ -270,7 +271,7 @@ class FriendsList extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: skin.bodyBackgroundColor
+    backgroundColor: Skin.bodyBackgroundColor
   },
   flex: {
     flex: 1
@@ -280,10 +281,9 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   listHeadBottom: {
-    flex:1,
     flexDirection: 'row',
-    paddingBottom: utils.px2dp(55),
-    paddingTop: utils.px2dp(35)
+    paddingBottom: Utils.px2dp(55),
+    paddingTop: Utils.px2dp(35)
   },
   listHeadBottomItem: {
     flex:1,
@@ -293,12 +293,12 @@ const styles = StyleSheet.create({
   },
   listHeadBottomItemText: {
     color: '#050505',
-    fontSize: utils.fontSize2RN(40),
-    marginTop: utils.px2dp(10)
+    fontSize: Utils.fontSize2RN(40),
+    marginTop: Utils.px2dp(10)
   },
   listHeadBottomItemIcon: {
-    width: utils.px2dp(120),
-    height: utils.px2dp(120)
+    width: Utils.px2dp(120),
+    height: Utils.px2dp(120)
   },
   listItemGroupContainerExpander:{
     flex: 1,
@@ -312,25 +312,25 @@ const styles = StyleSheet.create({
   },
   listItemContainer: {
     flex: 1,
-    height: utils.px2dp(200),
+    height: Utils.px2dp(200),
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderColor: skin.messageListItemBorderColor,
-    borderBottomWidth: utils.px2dp(1),
-    paddingLeft: utils.px2dp(36),
-    paddingRight: utils.px2dp(36),
+    borderColor: Skin.messageListItemBorderColor,
+    borderBottomWidth: Utils.px2dp(1),
+    paddingLeft: Utils.px2dp(36),
+    paddingRight: Utils.px2dp(36),
   },
   listItemIcon: {
-    width: utils.px2dp(150),
-    height: utils.px2dp(150),
-    borderRadius: utils.px2dp(75),
-    marginRight: utils.px2dp(36)
+    width: Utils.px2dp(150),
+    height: Utils.px2dp(150),
+    borderRadius: Utils.px2dp(75),
+    marginRight: Utils.px2dp(36)
   },
   listItemRightText: {
-    color: skin.messageListItemDateColor,
-    fontSize: utils.fontSize2RN(40),
-    marginBottom: utils.px2dp(6),
+    color: Skin.messageListItemDateColor,
+    fontSize: Utils.fontSize2RN(40),
+    marginBottom: Utils.px2dp(6),
   },
   listItemRight: {
     flex: 1,
@@ -349,32 +349,32 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   listItemTitle: {
-    color: skin.messageListItemTitleColor,
-    fontSize: utils.fontSize2RN(50),
+    color: Skin.messageListItemTitleColor,
+    fontSize: Utils.fontSize2RN(50),
   },
   listItemIntro: {
     flex: 1,
-    color: skin.messageListItemIntroColor,
-    fontSize: utils.fontSize2RN(40),
+    color: Skin.messageListItemIntroColor,
+    fontSize: Utils.fontSize2RN(40),
   },
   headerTitleText: {
-    color: skin.headTitleBtnContentTextColor,
-    fontSize: utils.fontSize2RN(56),
+    color: Skin.headTitleBtnContentTextColor,
+    fontSize: Utils.fontSize2RN(56),
     fontWeight: '200',
   },
   sectionContainer: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
-    height: utils.px2dp(140),
+    height: Utils.px2dp(140),
     borderColor: '#c3c3c3',
-    borderWidth: utils.px2dp(1),
-    paddingLeft: utils.px2dp(22),
-    paddingRight: utils.px2dp(22)
+    borderWidth: Utils.px2dp(1),
+    paddingLeft: Utils.px2dp(22),
+    paddingRight: Utils.px2dp(22)
   },
   sectionTitle: {
-    color: skin.messageListItemTitleColor,
-    fontSize: utils.fontSize2RN(50),
+    color: Skin.messageListItemTitleColor,
+    fontSize: Utils.fontSize2RN(50),
   },
   sectionRight: {
     flex:1,
@@ -383,50 +383,49 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   sectionArrowRight: {
-    width: utils.px2dp(80),
-    height: utils.px2dp(80),
+    width: Utils.px2dp(80),
+    height: Utils.px2dp(80),
     tintColor: '#b3b3b3',
-    marginRight: utils.px2dp(22),
+    marginRight: Utils.px2dp(22),
     transform: [
       {rotate:'0deg'}
     ]
   },
   sectionArrowDown: {
-    width: utils.px2dp(80),
-    height: utils.px2dp(80),
+    width: Utils.px2dp(80),
+    height: Utils.px2dp(80),
     tintColor: '#b3b3b3',
-    marginRight: utils.px2dp(22),
+    marginRight: Utils.px2dp(22),
     transform: [
       {rotate:'90deg'}
     ]
   },
   searchContainer: {
-    flex:1,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft: utils.px2dp(37),
-    marginRight: utils.px2dp(37),
-    marginTop: utils.px2dp(20),
-    marginBottom: utils.px2dp(20),
-    height: utils.px2dp(80),
-    borderRadius: utils.px2dp(6),
-    backgroundColor:skin.searchBackgroundColor
+    marginLeft: Utils.px2dp(37),
+    marginRight: Utils.px2dp(37),
+    marginTop: Utils.px2dp(20),
+    marginBottom: Utils.px2dp(20),
+    height: Utils.px2dp(80),
+    borderRadius: Utils.px2dp(6),
+    backgroundColor:Skin.searchBackgroundColor
   },
   searchIcon: {
-    width: utils.px2dp(42),
-    height: utils.px2dp(42),
-    marginRight: utils.px2dp(13),
-    tintColor: skin.searchIconColor,
+    width: Utils.px2dp(42),
+    height: Utils.px2dp(42),
+    marginRight: Utils.px2dp(13),
+    tintColor: Skin.searchIconColor,
   },
   searchText: {
-    color:skin.searchTextColor,
-    fontSize:utils.fontSize2RN(45)
+    color:Skin.searchTextColor,
+    fontSize:Utils.fontSize2RN(45)
   },
   backgroundImage: {
     flex: 1,
-    width: utils.size.width,
-    height: utils.size.height,
+    width: Utils.size.width,
+    height: Utils.size.height,
     position: 'absolute',
   }
 })
@@ -436,6 +435,6 @@ export default connect(state => ({
   friendGroups: state.app.friendGroups
 }),
   (dispatch) => ({
-    getAllFriends: () => dispatch(appActions.getAllFriends())
+    getAllFriends: () => dispatch(AppActions.getAllFriends())
   })
 )(FriendsList);

@@ -3,6 +3,12 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "E:\\work\\QQDemo"
+		},
+		{
+			"path": "E:\\work\\GitHubPopular"
 		}
 	]
 }
