@@ -25,6 +25,7 @@ import {Skin} from '../modules/Skin';
 import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem';
 import FriendsListItem from '../components/FriendListItem';
+import Test from '../constants/Test';
 
 class FriendsList extends Component {
   constructor(props) {
@@ -46,6 +47,7 @@ class FriendsList extends Component {
   componentDidMount() {
     const {getAllFriends} = this.props;
     getAllFriends();
+    Test.name = 333;
   }
 
   render() {
@@ -82,7 +84,7 @@ class FriendsList extends Component {
       return (
         <View style={styles.container}>
           <Header 
-            title={'联系人'} 
+            title={'联系人'+Test.id} 
             navigator={this.props.navigator}
             renderRightBtn= {this._renderHeaderRightBtn.bind(this)()}
             />

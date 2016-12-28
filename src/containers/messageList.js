@@ -23,7 +23,8 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import Header from '../components/Header'
 import {Skin} from '../modules/Skin';
 import * as Config from '../constants/Config';
-import TouchMoveItem from '../components/TouchMoveItem'
+import TouchMoveItem from '../components/TouchMoveItem';
+import Test from '../constants/Test';
 
 const moreMenuDatas = [
   {index:0, image:require('../image/conversation_options_multichat.png'), title:'发起多人聊天'},

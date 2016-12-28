@@ -24,6 +24,7 @@ import Header from '../components/Header'
 import {Skin} from '../modules/Skin';
 import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem'
+import Test from '../constants/Test';
 
 const listTestIcons = [
   require('../image/head/1.bmp'),
@@ -60,6 +61,7 @@ class zone extends Component {
   componentDidMount() {
     const {getAllFriends} = this.props;
     getAllFriends();
+    Test.id = 4;
   }
 
   render() {
@@ -95,7 +97,7 @@ class zone extends Component {
       return (
         <View style={styles.container}>
           <Header 
-            title={'动态'} 
+            title={'动态'+Test.name} 
             navigator={this.props.navigator}
             renderRightBtn= {this._renderHeaderRightBtn.bind(this)()}
             />
@@ -394,7 +396,7 @@ const styles = StyleSheet.create({
     marginBottom: Utils.px2dp(20),
     height: Utils.px2dp(80),
     borderRadius: Utils.px2dp(6),
-    backgroundColor:Skin.searchBackgroundColor
+    backgroundColor: Skin.searchBackgroundColor
   },
   searchIcon: {
     width: Utils.px2dp(42),
@@ -403,8 +405,8 @@ const styles = StyleSheet.create({
     tintColor: Skin.searchIconColor,
   },
   searchText: {
-    color:Skin.searchTextColor,
-    fontSize:Utils.fontSize2RN(45)
+    color: Skin.searchTextColor,
+    fontSize: Utils.fontSize2RN(45)
   },
   backgroundImage: {
     flex: 1,
