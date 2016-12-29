@@ -1,5 +1,5 @@
 const defaultSkin = {
-  bodyBackgroundColor: '#ffffff',
+  bodyBackgroundColor: '#f9f9fb',
   headBackgroundColor: '#009bdb',
   headTitleBtnBackgroundColor: '#ffffff',
   headTitleBtnContentBackgroundColor: '#009bdb',

@@ -8,11 +8,11 @@ import {
     Navigator
 } from 'react-native';
 
-import BaseComponent from '../components/BaseScene'
+import BaseScene from '../components/BaseScene'
 import HomeScene from './HomeScene'
 import QQScene from './QQScene'
 
-class SplashScene extends BaseComponent {
+class SplashScene extends BaseScene {
   constructor(props) {
     super(props);
     this.titlePos = {x:-1000, y:0}
@@ -47,7 +47,7 @@ class SplashScene extends BaseComponent {
      {
       toValue: 0,
       easing: Easing.ease,
-      duration: 1500
+      duration: 1000
      } // Back to zero
    ).start((ret) => {
       if (ret.finished) {
@@ -56,7 +56,7 @@ class SplashScene extends BaseComponent {
             component: QQScene,
             sceneConfig: Navigator.SceneConfigs.FloatFromRight,
           });
-        }, 1000)
+        }, 500)
       }
    });
   }

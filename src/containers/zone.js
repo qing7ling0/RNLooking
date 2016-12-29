@@ -19,31 +19,21 @@ import {bindActionCreators} from 'redux'
 import * as AppActions from '../actions/AppActions'
 import { connect } from 'react-redux'
 import Utils from '../utils/Utils'
-import Icon from 'react-native-vector-icons/Ionicons';
 import Header from '../components/Header'
 import {Skin} from '../modules/Skin';
 import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem'
 import Test from '../constants/Test';
+import ZoneDetail from './ZoneDetail'
 
-const listTestIcons = [
-  require('../image/head/1.bmp'),
-  require('../image/head/2.bmp'),
-  require('../image/head/3.bmp'),
-  require('../image/head/4.bmp'),
-  require('../image/head/5.bmp'),
-  require('../image/head/6.bmp'),
-  require('../image/head/7.bmp'),
-  require('../image/head/8.bmp'),
-  require('../image/head/9.bmp'),
-  require('../image/head/10.bmp'),
-  require('../image/head/11.bmp'),
-  require('../image/head/12.bmp'),
-  require('../image/head/13.bmp'),
-  require('../image/head/14.bmp'),
-  require('../image/head/15.bmp'),
-  require('../image/head/16.bmp'),
-]
+const listZoneIcons = {
+  1: require('../image/zone_icon_1.png'),
+  2: require('../image/zone_icon_2.png'),
+  3: require('../image/zone_icon_3.png'),
+  4: require('../image/zone_icon_4.png'),
+  5: require('../image/zone_icon_5.png'),
+  6: require('../image/zone_icon_6.png')
+}
 
 class zone extends Component {
   constructor(props) {
@@ -59,41 +49,15 @@ class zone extends Component {
   }
 
   componentDidMount() {
-    const {getAllFriends} = this.props;
-    getAllFriends();
-    Test.id = 4;
+    const {getZoneDatas} = this.props;
+    getZoneDatas();
   }
 
   render() {
-    const { friends, friendGroups } = this.props;
+    const { zoneDatas} = this.props;
 
-    let friendDatas = [];
-    let friendRows = [];
-    for(let gInd in friendGroups) {
-      if (gInd >= this.state.groupsExpander.length) {
-        this.state.groupsExpander.push(true);
-      }
-
-      let groups = friendGroups[gInd];
-      let data = [];
-      let row = [];
-      let index = 0;
-      groups.index = gInd;
-      data.groups = groups;
-      for(let fi in groups.friendIDS) {
-        for(let fInd in friends) {
-          if (friends[fInd].id === groups.friendIDS[fi]) {
-            data.push(friends[fInd]);
-            row.push(index);
-            index ++;
-          }
-        }
-      }
-      friendDatas.push(data);
-      friendRows.push(row);
-    }
-    if (friendDatas) {
-      let datas = this.ds.cloneWithRowsAndSections(friendDatas, null , friendRows);
+    if (zoneDatas) {
+      let datas = this.ds.cloneWithRows(zoneDatas);
       return (
         <View style={styles.container}>
           <Header 
@@ -102,16 +66,11 @@ class zone extends Component {
             renderRightBtn= {this._renderHeaderRightBtn.bind(this)()}
             />
           <View style={styles.flex}>
-            <View>
-              <Image style={styles.backgroundImage} source={require('../image/bg.png') }></Image>
-
-            </View>
             <ListView
               dataSource={datas}
-              initialListSize={0}
+              initialListSize={10}
               pageSize={1}
               renderRow={this._renderRow.bind(this)}
-              renderSectionHeader={this._renderSection.bind(this)}
               renderHeader={this._renderHeader.bind(this) }
               />
           </View>
@@ -124,6 +83,7 @@ class zone extends Component {
 
   _renderHeaderRightBtn() {
     return (
+
       <TouchableOpacity 
         style={styles.flex}
         onPress={() =>{}}>
@@ -153,80 +113,21 @@ class zone extends Component {
     }
   }
 
-  _renderRowRight(row) {
-    return (
-      <View style={styles.listItemBottomContainer} >
-        <TouchableOpacity style={styles.listItemBottomBtn1} opacity={1}>
-          <View style={styles.listItemBottomBtnContainer}>
-            <Text style={styles.listItemBottomText}>置顶</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.listItemBottomBtn2} opacity={1}>
-          <View style={styles.listItemBottomBtnContainer}>
-            <Text style={styles.listItemBottomText}>标记未读</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.listItemBottomBtn3} opacity={1}>
-          <View style={styles.listItemBottomBtnContainer}>
-            <Text style={styles.listItemBottomText}>删除</Text>
-          </View>
-        </TouchableOpacity>
-      </View>
-    );
-  }
-
   _renderRow(rowData, sectionID, rowId) {
-    if (this.state.groupsExpander[sectionID]) {
-      return (
-        <TouchableHighlight
-          underlayColor= {'#c6dff1'}
-          onPress={()=>{}}
-          style={{
-            flex: 1,
-            height: Utils.px2dp(200),
-            borderColor: '#c3c3c3',
-            borderWidth: Utils.px2dp(1),
-          }}>
-          <View style={styles.listItemContainer}>
-            <Image style={styles.listItemIcon} source={listTestIcons[rowData.icon]} />
-            <View style={styles.listItemRight}>
-              <View style={styles.listItemTop}>
-                <View style={[styles.listItemTop, styles.flex]}>
-                  <Text style={styles.listItemTitle}>{rowData.name}</Text>
-                </View>
-              </View>
-              <View style={styles.listItemBottom}>
-                <View style={[styles.listItemBottom, styles.flex]}>
-                  <Text style={styles.listItemIntro}>{rowData.signature}</Text>
-                </View>
-              </View>
-            </View>
-          </View>
-        </TouchableHighlight>
-      );
-    } else {
-      return (null);
-    }
-  }
-
-  _renderSection(sectionData, sectionID) {
-    let arrowStyle = this.state.groupsExpander[sectionID] ? styles.sectionArrowDown : styles.sectionArrowRight;
     return (
       <TouchableHighlight
-        underlayColor= {'#f4f4f4'}
-        onPress={()=>{
-          this._sectionPressed.bind(this)(sectionData, sectionID);
-        }}
-      >
-        <View style={styles.sectionContainer}>
-          <Image style={arrowStyle} source={require('../image/hmp.png')} />
-          <Text style={styles.sectionTitle}>{sectionData.groups.name}</Text>
-          <View style={styles.sectionRight}>
-            <Text style={styles.listItemRightText}>2/2</Text>
+        underlayColor= {'#c6dff1'}
+        style={styles.flex}
+        onPress={this._rowPressed.bind(this)}>
+        <View style={styles.listItemContainer}>
+          <Image style={styles.listItemIcon} source={listZoneIcons[rowData.id]} />
+          <Text style={styles.listItemTitle}>{rowData.name}</Text>
+          <View style={styles.listItemRight}>
+            <Image style={styles.listItemRightImage} source={require('../image/mgj.png')}/>
           </View>
         </View>
       </TouchableHighlight>
-    )
+    );
   }
 
   _renderHeader() {
@@ -254,16 +155,12 @@ class zone extends Component {
       );
   }
 
-  _sectionPressed(sectionData, sectionID) {
-    let _groupsExpander = this.state.groupsExpander;
-    _groupsExpander[sectionData.groups.index] = !_groupsExpander[sectionData.groups.index];
-    this.setState({
-      groupsExpander: _groupsExpander,
-    });
-  }
-
   _rowPressed(rowData, sectionID, rowID) {
-
+    const { rootNavigator} = this.props;
+    rootNavigator.push({
+      component: ZoneDetail,
+      sceneConfig: Navigator.SceneConfigs.FloatFromRight,
+    });
   }
 }
 
@@ -301,9 +198,9 @@ const styles = StyleSheet.create({
   },
   listItemContainer: {
     flex: 1,
-    height: Utils.px2dp(200),
+    height: Utils.px2dp(140),
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     borderColor: Skin.messageListItemBorderColor,
     borderBottomWidth: Utils.px2dp(1),
@@ -311,40 +208,24 @@ const styles = StyleSheet.create({
     paddingRight: Utils.px2dp(36),
   },
   listItemIcon: {
-    width: Utils.px2dp(150),
-    height: Utils.px2dp(150),
-    borderRadius: Utils.px2dp(75),
-    marginRight: Utils.px2dp(36)
-  },
-  listItemRightText: {
-    color: Skin.messageListItemDateColor,
-    fontSize: Utils.fontSize2RN(40),
-    marginBottom: Utils.px2dp(6),
-  },
-  listItemRight: {
-    flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  listItemTop: {
-    flexDirection:'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-  },
-  listItemBottom: {
-    flexDirection:'row',
-    justifyContent: 'space-between',
-    alignItems: 'center'
+    width: Utils.px2dp(80),
+    height: Utils.px2dp(80),
+    marginLeft: Utils.px2dp(16),
+    marginRight: Utils.px2dp(52)
   },
   listItemTitle: {
     color: Skin.messageListItemTitleColor,
-    fontSize: Utils.fontSize2RN(50),
+    fontSize: Utils.fontSize2RN(50)
   },
-  listItemIntro: {
+  listItemRight: {
     flex: 1,
-    color: Skin.messageListItemIntroColor,
-    fontSize: Utils.fontSize2RN(40),
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'center'
+  },
+  listItemRightImage: {
+    width: Utils.px2dp(25),
+    height: Utils.px2dp(40),
   },
   headerTitleText: {
     color: Skin.headTitleBtnContentTextColor,
@@ -417,10 +298,9 @@ const styles = StyleSheet.create({
 })
 
 export default connect(state => ({
-  friends: state.app.friends,
-  friendGroups: state.app.friendGroups
+  zoneDatas: state.app.zoneDatas,
 }),
   (dispatch) => ({
-    getAllFriends: () => dispatch(AppActions.getAllFriends())
+    getZoneDatas: () => dispatch(AppActions.getZoneDatas())
   })
 )(zone);

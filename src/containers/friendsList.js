@@ -21,7 +21,7 @@ import { connect } from 'react-redux'
 import Utils from '../utils/Utils'
 import Icon from 'react-native-vector-icons/Ionicons';
 import Header from '../components/Header'
-import {Skin} from '../modules/Skin';
+import {Skin} from '../modules/Skin'
 import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem';
 import FriendsListItem from '../components/FriendListItem';
@@ -306,7 +306,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     overflow: 'hidden',
-    backgroundColor: '#ff00ff',
     opacity: 1
   },
   listItemGroupContainerUnexpander:{
@@ -322,6 +321,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: Utils.px2dp(1),
     paddingLeft: Utils.px2dp(36),
     paddingRight: Utils.px2dp(36),
+    marginBottom: Utils.px2dp(56)
   },
   listItemIcon: {
     width: Utils.px2dp(150),
@@ -372,7 +372,8 @@ const styles = StyleSheet.create({
     borderColor: '#c3c3c3',
     borderWidth: Utils.px2dp(1),
     paddingLeft: Utils.px2dp(22),
-    paddingRight: Utils.px2dp(22)
+    paddingRight: Utils.px2dp(22),
+    marginTop: Utils.px2dp(56)
   },
   sectionTitle: {
     color: Skin.messageListItemTitleColor,

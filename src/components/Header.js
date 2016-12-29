@@ -24,15 +24,23 @@ export default class Header extends Component {
   }
 
   render() {
-    const { title, renderRightBtn, rightBtnPress, showBackBtn, user} = this.props;
-    let headIcon = this._renderHeadIcon.bind(this);
+    const { title, renderRightBtn, rightBtnPress, showBackBtn, user, renderLeftBtn} = this.props;
     let titleButton = this._renderTitleButton.bind(this);
     let des = PixelRatio.get();
     let cusRightBtn = this._renderRight.bind(this);
     let titleRender = this._renderTitle.bind(this);
+
+    let left = null;
+    if (renderLeftBtn) {
+      left = renderLeftBtn();
+    } else {
+      let headIcon = this._renderHeadIcon.bind(this);
+      left = headIcon();
+    }
+
     return (
       <View style={styles.container}>
-        {headIcon()}
+        {left}
         {title ? titleRender(title) : titleButton()}
         <View style={styles.rightBtn}>
           {renderRightBtn ? renderRightBtn : cusRightBtn()}

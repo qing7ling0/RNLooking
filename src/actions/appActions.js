@@ -38,6 +38,15 @@ const FriendGroups = [
     {id:5, name:'高中同学', friendIDS:[2,9,1,5,8,7] },
 ]
 
+const ZoneDatas = [
+    {id:1, name:'游戏'},
+    {id:2, name:'日迹'},
+    {id:3, name:'看点'},
+    {id:4, name:'音乐'},
+    {id:5, name:'直播'},
+    {id:6, name:'运动'},
+]
+
 const getUserInfoFN = (id) => {
     for (var i = 0; i < Users.length; i++) {
         let user = Users[i];
@@ -88,6 +97,15 @@ export const getAllFriends = () => {
         dispatch({ type: ActionTypes.REQ_ALL_FRIENDS })
         setTimeout(() => {
             dispatch({ type: ActionTypes.RES_ALL_FRIENDS, friendGroups:FriendGroups, friends:Friends })
+        }, 50)
+    };
+}
+
+export const getZoneDatas = () => {
+    return (dispatch) => {
+        dispatch({ type: ActionTypes.REQ_ALL_ZONE_DATAS })
+        setTimeout(() => {
+            dispatch({ type: ActionTypes.RES_ALL_ZONE_DATAS, zoneDatas:ZoneDatas })
         }, 50)
     };
 }

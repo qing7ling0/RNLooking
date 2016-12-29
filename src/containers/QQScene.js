@@ -16,6 +16,7 @@ import { connect } from 'react-redux'
 import Icon from 'react-native-vector-icons/Ionicons'
 import TabNavigation from 'react-native-tab-navigator'
 
+import BaseScene from '../components/BaseScene'
 import Utils from '../utils/Utils'
 import MessageList from './MessageList'
 import FriendsList from './FriendsList'
@@ -24,7 +25,7 @@ import * as Config from '../constants/Config.js';
 import Navigation from '../components/Navigation'
 
 
-class App extends Component {
+class QQScene extends BaseScene {
   constructor(props) {
     super(props);
   }
@@ -42,21 +43,21 @@ class App extends Component {
             renderIcon={() => <Image source={require('../image/skin_tab_icon_conversation_normal.png')} style={styles.tabItemIcon} />}
             renderSelectedIcon={() => <Image source={require('../image/skin_tab_icon_conversation_selected.png')} style={styles.tabItemIcon} />}
             onPress={() => {showMainNav(Config.MAIN_NAV_ID.NAV_MESSAGE);}}>
-            <Navigation component={MessageList}/>
+            <Navigation component={MessageList} params={{rootNavigator:this.props.navigator}}/>
           </TabNavigation.Item>
           <TabNavigation.Item
             selected={currentNavID===Config.MAIN_NAV_ID.NAV_CONTACT}
             renderIcon={() => <Image source={require('../image/skin_tab_icon_contact_normal.png')} style={styles.tabItemIcon} />}
             renderSelectedIcon={() => <Image source={require('../image/skin_tab_icon_contact_selected.png')} style={styles.tabItemIcon} />}
             onPress={() => { showMainNav(Config.MAIN_NAV_ID.NAV_CONTACT); } }>
-            <Navigation component={FriendsList}/>
+            <Navigation component={FriendsList} params={{rootNavigator:this.props.navigator}}/>
           </TabNavigation.Item>
           <TabNavigation.Item
             selected={currentNavID===Config.MAIN_NAV_ID.NAV_ZONE}
             renderIcon={() => <Image source={require('../image/skin_tab_icon_plugin_normal.png')} style={styles.tabItemIcon} />}
             renderSelectedIcon={() => <Image source={require('../image/skin_tab_icon_plugin_selected.png')} style={styles.tabItemIcon} />}
             onPress={() => { showMainNav(Config.MAIN_NAV_ID.NAV_ZONE); } }>
-            <Navigation component={Zone}/>
+            <Navigation component={Zone} params={{rootNavigator:this.props.navigator}} />
           </TabNavigation.Item>
         </TabNavigation>
         {
@@ -113,4 +114,4 @@ export default connect(state => ({
     hideMoreMenu: () => dispatch(AppActions.hideMoreMenu()),
     showMainNav: (navID) => dispatch(AppActions.showMainNav(navID))
   })
-)(App);
+)(QQScene);

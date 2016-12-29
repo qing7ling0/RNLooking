@@ -39,8 +39,10 @@ const AppReducers = (state = initialState, action) => {
       return Object.assign({}, state, {});
     case ActionTypes.RES_ALL_FRIENDS:
       return Object.assign({}, state, { friendGroups:action.friendGroups, friends:action.friends});
+    case ActionTypes.RES_ALL_ZONE_DATAS:
+      return Object.assign({}, state, { ...action});
     default:
-      return state
+      return Object.assign({}, state, { ...action});
   }
 }
 export default AppReducers
