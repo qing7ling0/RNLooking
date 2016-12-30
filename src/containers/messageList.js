@@ -25,6 +25,7 @@ import {Skin} from '../modules/Skin';
 import * as Config from '../constants/Config';
 import TouchMoveItem from '../components/TouchMoveItem';
 import Test from '../constants/Test';
+import MessageScene from './MessageScene'
 
 const moreMenuDatas = [
   {index:0, image:require('../image/conversation_options_multichat.png'), title:'发起多人聊天'},
@@ -173,7 +174,13 @@ class MessageList extends Component {
 
   _renderRowContent(row) {
     return (
-      <View style={styles.listItemContainer}>
+      <TouchableOpacity style={styles.listItemContainer} onPress={()=>{
+        const { rootNavigator} = this.props;
+        rootNavigator.push({
+          component: MessageScene,
+          params: {name:row.name}
+        });
+      }}>
         <Image style={styles.listItemIcon} source={listTestIcons[row.icon]} />
         <View style={styles.listItemRight}>
           <View style={styles.listItemTop}>
@@ -195,7 +202,7 @@ class MessageList extends Component {
             </View>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     );
   }
 
